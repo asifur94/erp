@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <div x-data="{ open: false }" class="wrapper overflow-x-hidden bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40" >
+    <div x-data="{ open: false }" class="wrapper overflow-x-hidden bg-gray-100  " >
 
         @include('layouts.navigation')
 
@@ -17,7 +17,7 @@
                         <div class="flex flex-wrap flex-row" bis_skin_checked="1">
             <!-- target widget -->
             <div class="flex-shrink max-w-full px-4 w-full sm:w-1/2 lg:w-1/4 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
                 <h3 class="text-base font-bold mb-2">Sales</h3>
                 <h2 class="text-3xl font-bold mb-4">1,200</h2>
                 <!-- target -->
@@ -45,7 +45,7 @@
 
             <!-- target widget -->
             <div class="flex-shrink max-w-full px-4 w-full sm:w-1/2 lg:w-1/4 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
                 <h3 class="text-base font-bold mb-2">Revenue</h3>
                 <h2 class="text-3xl font-bold mb-4">$12,500</h2>
                 <!-- target -->
@@ -73,7 +73,7 @@
 
             <!-- target widget -->
             <div class="flex-shrink max-w-full px-4 w-full sm:w-1/2 lg:w-1/4 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
                 <h3 class="text-base font-bold mb-2">Profit</h3>
                 <h2 class="text-3xl font-bold mb-4">$5,200</h2>
                 <!-- target -->
@@ -101,7 +101,7 @@
 
             <!-- target widget -->
             <div class="flex-shrink max-w-full px-4 w-full sm:w-1/2 lg:w-1/4 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6 relative overflow-hidden" bis_skin_checked="1">
                 <h3 class="text-base font-bold mb-2">Costs</h3>
                 <h2 class="text-3xl font-bold mb-4">$7,200</h2>
                 <!-- target -->
@@ -129,7 +129,7 @@
 
             <!-- Sales Revenue -->
             <div class="flex-shrink max-w-full px-4 w-full mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
                 <div class="flex pb-6" bis_skin_checked="1">
                   <div class="flex flex-col" bis_skin_checked="1">
                     <h3 class="text-base font-bold">Sales Revenue</h3>
@@ -143,7 +143,7 @@
 
             <!-- Net profits -->
             <div class="flex-shrink max-w-full px-4 w-full lg:w-1/2 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
                 <div class="flex pb-6" bis_skin_checked="1">
                   <div class="flex flex-col" bis_skin_checked="1">
                     <h3 class="text-base font-bold">Net profits</h3>
@@ -157,7 +157,7 @@
 
             <!-- Up/Cross Sell -->
             <div class="flex-shrink max-w-full px-4 w-full lg:w-1/2 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
                 <div class="flex pb-6" bis_skin_checked="1">
                   <div class="flex flex-col" bis_skin_checked="1">
                     <h3 class="text-base font-bold">Up/Cross Sell</h3>
@@ -174,7 +174,7 @@
                         <span class="text-sm text-green-500">+14%</span>
                       </div>
                       <p class="text-2xl font-bold text-indigo-500 mb-1">$6,300</p>
-                      <div class="border-t border-gray-100 dark:border-gray-700 w-full my-2" bis_skin_checked="1"></div>
+                      <div class="border-t border-gray-100  w-full my-2" bis_skin_checked="1"></div>
                       <div class="flex flex-row items-center justify-between" bis_skin_checked="1">
                         <h3 class="semibold text-sm">Cross Sell</h3>
                         <span class="text-sm text-red-500">-3%</span>
@@ -188,7 +188,7 @@
 
             <!-- Cost Breakdown -->
             <div class="flex-shrink max-w-full px-4 w-full lg:w-1/2 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
                 <div class="flex pb-6" bis_skin_checked="1">
                   <div class="flex flex-col" bis_skin_checked="1">
                     <h3 class="text-base font-bold">Cost Breakdown</h3>
@@ -200,19 +200,19 @@
                   </div>
                   <div class="flex-shrink max-w-full w-1/2" bis_skin_checked="1">
                     <div class="text-left ml-6" bis_skin_checked="1">
-                      <div class="flex flex-row items-center justify-between border-b border-gray-100 dark:border-gray-700 py-4" bis_skin_checked="1">
+                      <div class="flex flex-row items-center justify-between border-b border-gray-100  py-4" bis_skin_checked="1">
                         <h3 class="font-semibold text-sm">Marketing</h3>
                         <p class="font-semibold text-indigo-500">$3,100</p>
                       </div>
-                      <div class="flex flex-row items-center justify-between border-b border-gray-100 dark:border-gray-700 py-4" bis_skin_checked="1">
+                      <div class="flex flex-row items-center justify-between border-b border-gray-100  py-4" bis_skin_checked="1">
                         <h3 class="font-semibold text-sm">Sales</h3>
                         <p class="font-semibold text-indigo-500">$2,350</p>
                       </div>
-                      <div class="flex flex-row items-center justify-between border-b border-gray-100 dark:border-gray-700 py-4" bis_skin_checked="1">
+                      <div class="flex flex-row items-center justify-between border-b border-gray-100  py-4" bis_skin_checked="1">
                         <h3 class="font-semibold text-sm">Maintenance</h3>
                         <p class="font-semibold text-indigo-500">$1,260</p>
                       </div>
-                      <div class="flex flex-row items-center justify-between border-b border-gray-100 dark:border-gray-700 py-4" bis_skin_checked="1">
+                      <div class="flex flex-row items-center justify-between border-b border-gray-100  py-4" bis_skin_checked="1">
                         <h3 class="font-semibold text-sm">Others</h3>
                         <p class="font-semibold text-indigo-500">$980</p>
                       </div>
@@ -224,7 +224,7 @@
 
             <!-- Incremental Sales -->
             <div class="flex-shrink max-w-full px-4 w-full lg:w-1/2 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
                 <div class="flex pb-6" bis_skin_checked="1">
                   <div class="flex flex-col" bis_skin_checked="1">
                     <h3 class="text-base font-bold">Incremental Sales</h3>
@@ -238,7 +238,7 @@
 
             <!-- Sales Leaderboard -->
             <div class="flex-shrink max-w-full px-4 w-full mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
                 <div class="flex flex-row justify-between pb-3" bis_skin_checked="1">
                   <div class="flex flex-col" bis_skin_checked="1">
                     <h3 class="text-base font-bold">Sales Leaderboard</h3>
@@ -264,9 +264,9 @@
                           </td>
                           <td>
                             <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300 dark:bg-gray-900 dark:border-gray-700 hidden lg:flex" src="src/img/avatar/avatar.png" alt="Image Description">
+                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300  hidden lg:flex" src="src/img/avatar/avatar.png" alt="Image Description">
                               <div class="lg:ml-4" bis_skin_checked="1">
-                                <div class="font-bold text-gray-900 dark:text-gray-300 flex-shrink max-w-full mb-1" bis_skin_checked="1">
+                                <div class="font-bold text-gray-900  flex-shrink max-w-full mb-1" bis_skin_checked="1">
                                   John Thomas
                                 </div>
                                 <div class="italic text-gray-500 flex-shrink max-w-full" bis_skin_checked="1">
@@ -294,9 +294,9 @@
                           </td>
                           <td>
                             <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300 dark:bg-gray-900 dark:border-gray-700 hidden lg:flex" src="src/img/avatar/avatar2.png" alt="Image Description">
+                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300  hidden lg:flex" src="src/img/avatar/avatar2.png" alt="Image Description">
                               <div class="lg:ml-4" bis_skin_checked="1">
-                                <div class="font-bold text-gray-900 dark:text-gray-300 flex-shrink max-w-full mb-1" bis_skin_checked="1">
+                                <div class="font-bold text-gray-900  flex-shrink max-w-full mb-1" bis_skin_checked="1">
                                   Carlos Garcia
                                 </div>
                                 <div class="italic text-gray-500 flex-shrink max-w-full" bis_skin_checked="1">
@@ -324,9 +324,9 @@
                           </td>
                           <td>
                             <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300 dark:bg-gray-900 dark:border-gray-700 hidden lg:flex" src="src/img/avatar/avatar3.png" alt="Image Description">
+                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300  hidden lg:flex" src="src/img/avatar/avatar3.png" alt="Image Description">
                               <div class="lg:ml-4" bis_skin_checked="1">
-                                <div class="font-bold text-gray-900 dark:text-gray-300 flex-shrink max-w-full mb-1" bis_skin_checked="1">
+                                <div class="font-bold text-gray-900  flex-shrink max-w-full mb-1" bis_skin_checked="1">
                                   Daniel Esteban
                                 </div>
                                 <div class="italic text-gray-500 flex-shrink max-w-full" bis_skin_checked="1">
@@ -354,9 +354,9 @@
                           </td>
                           <td>
                             <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300 dark:bg-gray-900 dark:border-gray-700 hidden lg:flex" src="src/img/avatar/avatar4.png" alt="Image Description">
+                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300  hidden lg:flex" src="src/img/avatar/avatar4.png" alt="Image Description">
                               <div class="lg:ml-4" bis_skin_checked="1">
-                                <div class="font-bold text-gray-900 dark:text-gray-300 flex-shrink max-w-full mb-1" bis_skin_checked="1">
+                                <div class="font-bold text-gray-900  flex-shrink max-w-full mb-1" bis_skin_checked="1">
                                   Steven Rey
                                 </div>
                                 <div class="italic text-gray-500 flex-shrink max-w-full" bis_skin_checked="1">
@@ -384,9 +384,9 @@
                           </td>
                           <td>
                             <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300 dark:bg-gray-900 dark:border-gray-700 hidden lg:flex" src="src/img/avatar/avatar5.png" alt="Image Description">
+                              <img class="rounded-full shadow w-12 h-12 max-w-full border-2 border-gray-200 bg-gray-300  hidden lg:flex" src="src/img/avatar/avatar5.png" alt="Image Description">
                               <div class="lg:ml-4" bis_skin_checked="1">
-                                <div class="font-bold text-gray-900 dark:text-gray-300 flex-shrink max-w-full mb-1" bis_skin_checked="1">
+                                <div class="font-bold text-gray-900  flex-shrink max-w-full mb-1" bis_skin_checked="1">
                                   Roman Davis
                                 </div>
                                 <div class="italic text-gray-500 flex-shrink max-w-full" bis_skin_checked="1">
@@ -417,10 +417,10 @@
 
             <!-- Product Performance -->
             <div class="flex-shrink max-w-full px-4 w-full lg:w-1/2 mb-6" bis_skin_checked="1">
-              <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full" bis_skin_checked="1">
+              <div class="p-6 bg-white  rounded-lg shadow-lg h-full" bis_skin_checked="1">
                 <table class="table-sm text-sm ltr:text-left rtl:text-right w-full">
                   <thead>
-                    <tr class="border-b dark:border-gray-700">
+                    <tr class="border-b ">
                       <th>
                         <p class="text-base font-bold">Product Performance</p>
                       </th>
@@ -525,7 +525,7 @@
 
             <!-- Sales Pipeline -->
             <div class="flex-shrink max-w-full px-4 w-full lg:w-1/2 mb-6" bis_skin_checked="1">
-              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
+              <div class="bg-white  rounded-lg shadow-lg h-full p-6" bis_skin_checked="1">
                 <div class="flex pb-6" bis_skin_checked="1">
                   <div class="flex flex-col" bis_skin_checked="1">
                     <h3 class="text-base font-bold">Monthly Sales Target</h3>

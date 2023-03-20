@@ -1,5 +1,5 @@
 
-<nav id="sidebar-menu" x-description="Mobile menu" x-bind:aria-expanded="open" :class="{ 'w-64 md:w-0': open, 'w-0 md:w-64': !(open) }" class="fixed transition-all duration-500 ease-in-out h-screen bg-white dark:bg-gray-800 shadow-sm w-0 md:w-64" aria-expanded="false">
+<nav id="sidebar-menu" x-description="Mobile menu" x-bind:aria-expanded="open" :class="{ 'w-64 md:w-0': open, 'w-0 md:w-64': !(open) }" class="fixed transition-all duration-500 ease-in-out h-screen bg-white  shadow-sm w-0 md:w-64" aria-expanded="false">
     <div class="h-full overflow-y-auto scrollbars" bis_skin_checked="1">
         <!--logo-->
         <div class="mt-18 text-center py-5" bis_skin_checked="1">
@@ -24,7 +24,7 @@
                     -6 c469 -33 947 205 1214 605 229 342 291 790 163 1173 -24 70 -76 192 -94
                     217 -10 16 -14 14 -45 -18z"></path>
                   </g>
-                </svg><span class="text-gray-700 dark:text-gray-200">ERP</span>
+                </svg><span class="text-gray-700 ">ERP</span>
               </h2>
               <h2 class="text-3xl font-semibold mx-auto logo-compact hidden">
                 <!-- <img class="inline-block w-7 h-auto -mt-1" src="../src/img/logo.png"> -->
@@ -55,7 +55,7 @@
         <ul x-data="{selected:1}" class="w-full float-none flex flex-col font-medium ltr:pl-1.5 rtl:pr-1.5">
           <!-- dropdown -->
           <li class="relative">
-            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 1 }" @click="selected !== 1 ? selected = 1 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 dark:hover:text-gray-300 text-indigo-500 dark:text-gray-300" href="javascript:;">
+            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 1 }" @click="selected !== 1 ? selected = 1 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500  text-indigo-500 dark:text-gray-300" href="javascript:;">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-4 w-4 ltr:mr-2 rtl:ml-2 bi bi-house-door" viewBox="0 0 16 16">
                 <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"></path>
               </svg>
@@ -74,14 +74,14 @@
             <ul x-show="selected == 1" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 ltr:pl-7 rtl:pr-7 py-0.5 ltr:text-left rtl:text-right mb-1 font-normal">
 
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="index-ecommerce.html">Ecommerce</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="index-ecommerce.html">Ecommerce</a>
               </li>
 
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="index-sales.html">Sales</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="index-sales.html">Sales</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="index-marketing.html">Marketing</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="index-marketing.html">Marketing</a>
               </li>
             </ul>
           </li>
@@ -99,7 +99,7 @@
 
           <!-- dropdown -->
           <li class="relative">
-            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 2 }" @click="selected !== 2 ? selected = 2 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 dark:hover:text-gray-300" href="javascript:;">
+            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 2 }" @click="selected !== 2 ? selected = 2 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 " href="javascript:;">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-4 w-4 ltr:mr-2 rtl:ml-2 bi bi-shop" viewBox="0 0 16 16">
                 <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"></path>
               </svg>
@@ -117,31 +117,31 @@
             <!-- dropdown menu -->
             <ul x-show="selected == 2" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 ltr:pl-7 rtl:pr-7 py-0.5 ltr:text-left rtl:text-right mb-1 font-normal" style="display: none;">
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="route('ecommerce.products.index')">Products</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="route('ecommerce.products.index')">Products</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/product-detail.html">Product Details</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/product-detail.html">Product Details</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/order.html">Orders</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/order.html">Orders</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/order-detail.html">Order Details</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/order-detail.html">Order Details</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/customers.html">Customers</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/customers.html">Customers</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/cart.html">Shopping Cart</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/cart.html">Shopping Cart</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/checkout.html">Checkout</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/checkout.html">Checkout</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/seller.html">Sellers</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/seller.html">Sellers</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="ecommerce/invoice.html">Invoice</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="ecommerce/invoice.html">Invoice</a>
               </li>
             </ul>
           </li>
@@ -166,23 +166,23 @@
             <!-- dropdown menu -->
             <ul x-show="selected == 3" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 ltr:pl-7 rtl:pr-7 py-0.5 ltr:text-left rtl:text-right mb-1 font-normal" style="display: none;">
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="project/list.html">Personnel file</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="project/list.html">Personnel file</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="project/detail.html">Schedule management</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="project/detail.html">Schedule management</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="project/kanban.html">Performance management</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="project/kanban.html">Performance management</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="project/create.html">Leave management</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="project/create.html">Leave management</a>
               </li>
             </ul>
           </li>
 
           <!-- dropdown -->
           <li class="relative">
-            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 4 }" @click="selected !== 4 ? selected = 4 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 dark:hover:text-gray-300" href="javascript:;">
+            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 4 }" @click="selected !== 4 ? selected = 4 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 " href="javascript:;">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-4 w-4 ltr:mr-2 rtl:ml-2 bi bi-file-earmark-richtext" viewBox="0 0 16 16">
                 <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
                 <path d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"></path>
@@ -213,57 +213,57 @@
                 </a>
                 <ul class="block rounded rounded-t-none top-full z-50 ltr:pl-7 rtl:pr-7 py-0.5 ltr:text-left rtl:text-right mb-1 font-normal" x-show="open" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" role="menu" aria-orientation="vertical" aria-labelledby="auth" style="display: none;">
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/register-basic.html">Register basic</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/register-basic.html">Register basic</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/register-cover.html">Register cover</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/register-cover.html">Register cover</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/register-ilustration.html">Register ilustration</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/register-ilustration.html">Register ilustration</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/login-basic.html">Login basic</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500" href="authentication/login-basic.html">Login basic</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/login-cover.html">Login cover</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/login-cover.html">Login cover</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/login-ilustration.html">Login ilustration</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/login-ilustration.html">Login ilustration</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/forgot-password.html">Forgot password</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/forgot-password.html">Forgot password</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/confirm-email.html">Confirm email</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/confirm-email.html">Confirm email</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/change-password.html">Change password</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/change-password.html">Change password</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="authentication/logout-page.html">Logout page</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="authentication/logout-page.html">Logout page</a>
                   </li>
                 </ul>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="pages-profile.html">Profile</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="pages-profile.html">Profile</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="pages-service.html">Services</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="pages-service.html">Services</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="pages-faq.html">Faq</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="pages-faq.html">Faq</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="pages-pricing.html">Pricing</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="pages-pricing.html">Pricing</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="pages-maintenance.html">Maintenance</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="pages-maintenance.html">Maintenance</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="pages-404.html">404</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="pages-404.html">404</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="pages-starter.html">Starter</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="pages-starter.html">Starter</a>
               </li>
             </ul>
           </li>
@@ -272,7 +272,7 @@
 
           <!-- dropdown -->
           <li class="relative">
-            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 5 }" @click="selected !== 5 ? selected = 5 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 dark:hover:text-gray-300" href="javascript:;">
+            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 5 }" @click="selected !== 5 ? selected = 5 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 " href="javascript:;">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-4 w-4 ltr:mr-2 rtl:ml-2 bi bi-layout-sidebar-inset" viewBox="0 0 16 16">
                 <path d="M14 2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"></path>
                 <path d="M3 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"></path>
@@ -291,29 +291,29 @@
             <!-- dropdown menu -->
             <ul x-show="selected == 5" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 ltr:pl-7 rtl:pr-7 py-0.5 ltr:text-left rtl:text-right mb-1 font-normal" style="display: none;">
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="layout-sidedark.html">Side Dark</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="layout-sidedark.html">Side Dark</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="layout-dark.html">Dark mode</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="layout-dark.html">Dark mode</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="layout-rtl.html">RTL mode</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="layout-rtl.html">RTL mode</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="layout-compact.html">Compact</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="layout-compact.html">Compact</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="layout-topnav.html">Top Navbar</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="layout-topnav.html">Top Navbar</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="layout-preloader.html">Preloader</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="layout-preloader.html">Preloader</a>
               </li>
             </ul>
           </li>
 
           <!-- dropdown -->
           <li class="relative">
-            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 6 }" @click="selected !== 6 ? selected = 6 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 dark:hover:text-gray-300" href="javascript:;">
+            <a :class="{ 'text-indigo-500 dark:text-gray-300': selected == 6 }" @click="selected !== 6 ? selected = 6 : selected = null" class="block py-2.5 px-6 hover:text-indigo-500 " href="javascript:;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline-block h-4 w-4 ltr:mr-2 rtl:ml-2 bi bi-layers" viewBox="0 0 16 16">
                 <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"></path>
               </svg>
@@ -330,89 +330,34 @@
 
             <!-- dropdown menu -->
             <ul x-show="selected == 6" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 ltr:pl-7 rtl:pr-7 py-0.5 ltr:text-left rtl:text-right mb-1 font-normal" style="display: none;">
+
+
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/accordion.html">Accordion</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/pagination.html">Pagination</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/alerts.html">Alerts</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/popovers.html">Popovers</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/avatar.html">Avatar</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/progress.html">Progress</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/badge.html">Badge</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/ribbon.html">Ribbon</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/breadcrumb.html">Breadcrumb</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/scrollbar.html">Scrollbar</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/buttons.html">Buttons</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/spinners.html">Spinners</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/card.html">Card</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/sweetalert.html">Sweet alert</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/carousel.html">Carousel</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/tabs.html">Tabs</a>
               </li>
               <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/collapse.html">Collapse</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/devices.html">Devices</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/dropdowns.html">Dropdowns</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/grid.html">Grid</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/list-group.html">List Group</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/lightbox.html">Lightbox</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/map.html">Map</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/modal.html">Modal</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/navbar.html">Navbar</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/notification.html">Notification</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/offcanvas.html">Offcanvas</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/pagination.html">Pagination</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/popovers.html">Popovers</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/progress.html">Progress</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/ribbon.html">Ribbon</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/scrollbar.html">Scrollbar</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/spinners.html">Spinners</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/sweetalert.html">Sweet alert</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/tabs.html">Tabs</a>
-              </li>
-              <li class="relative">
-                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 dark:hover:text-gray-300" href="components/tooltips.html">Tooltips</a>
+                <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500 " href="components/tooltips.html">Tooltips</a>
               </li>
             </ul>
           </li>
@@ -429,9 +374,9 @@
 
 <div x-bind:aria-expanded="open" :class="{ 'ltr:ml-64 ltr:-mr-64 md:ltr:ml-0 md:ltr:mr-0 rtl:mr-64 rtl:-ml-64 md:rtl:mr-0 md:rtl:ml-0': open, 'ltr:ml-0 ltr:mr-0 md:ltr:ml-64 rtl:mr-0 rtl:ml-0 md:rtl:mr-64': !(open) }" class="flex flex-col min-h-screen transition-all duration-500 ease-in-out ltr:ml-64 ltr:-mr-64 md:ltr:ml-0 md:ltr:mr-0 rtl:mr-64 rtl:-ml-64 md:rtl:mr-0 md:rtl:ml-0" aria-expanded="true" bis_skin_checked="1">
       <!-- Navbar -->
-<nav :class="{ 'ltr:left-64 ltr:-right-64 md:ltr:left-0 md:ltr:right-0 rtl:right-64 rtl:-left-64 md:rtl:right-0 md:rtl:left-0': open, 'ltr:left-0 ltr:right-0 md:ltr:left-64 rtl:right-0 rtl:left-0 md:rtl:right-64': !(open) }" class="z-50 fixed flex flex-row flex-nowrap items-center justify-between mt-0 py-2 ltr:left-0 md:ltr:left-64 ltr:right-0 rtl:right-0 md:rtl:right-64 rtl:left-0 px-6 bg-white dark:bg-gray-800 shadow-sm transition-all duration-500 ease-in-out" id="desktop-menu">
+<nav :class="{ 'ltr:left-64 ltr:-right-64 md:ltr:left-0 md:ltr:right-0 rtl:right-64 rtl:-left-64 md:rtl:right-0 md:rtl:left-0': open, 'ltr:left-0 ltr:right-0 md:ltr:left-64 rtl:right-0 rtl:left-0 md:rtl:right-64': !(open) }" class="z-50 fixed flex flex-row flex-nowrap items-center justify-between mt-0 py-2 ltr:left-0 md:ltr:left-64 ltr:right-0 rtl:right-0 md:rtl:right-64 rtl:left-0 px-6 bg-white  shadow-sm transition-all duration-500 ease-in-out" id="desktop-menu">
         <!-- sidenav button-->
-        <button id="navbartoggle" type="button" class="inline-flex items-center justify-center text-gray-800 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200 focus:outline-none focus:ring-0" aria-controls="sidebar-menu" @click="open = !open" aria-expanded="false" x-bind:aria-expanded="open.toString()">
+        <button id="navbartoggle" type="button" class="inline-flex items-center justify-center text-gray-800 hover:text-gray-600  focus:outline-none focus:ring-0" aria-controls="sidebar-menu" @click="open = !open" aria-expanded="false" x-bind:aria-expanded="open.toString()">
           <span class="sr-only">Mobile menu</span>
           <svg x-description="Icon open" x-state:on="Menu open" x-state:off="Menu closed" class="hidden h-8 w-8" :class="{ 'block': open, 'hidden': !(open) }" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
             <path class="hidden md:block" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
@@ -448,7 +393,7 @@
         <!-- Search -->
         <form class="hidden sm:inline-block md:hidden lg:inline-block mx-5">
           <div class="flex flex-wrap items-stretch w-full relative" bis_skin_checked="1">
-            <input type="text" class="flex-shrink flex-grow max-w-full leading-5 relative text-sm py-2 px-4 ltr:rounded-l rtl:rounded-r text-gray-800 bg-gray-100 overflow-x-auto focus:outline-none border border-gray-100 focus:border-gray-200 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" placeholder="Search…" aria-label="Search">
+            <input type="text" class="flex-shrink flex-grow max-w-full leading-5 relative text-sm py-2 px-4 ltr:rounded-l rtl:rounded-r text-gray-800 bg-gray-100 overflow-x-auto focus:outline-none border border-gray-100 focus:border-gray-200 focus:ring-0    " placeholder="Search…" aria-label="Search">
             <div class="flex -mr-px" bis_skin_checked="1">
               <button class="flex items-center py-2 px-4 ltr:-ml-1 rtl:-mr-1 ltr:rounded-r rtl:rounded-l leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -476,8 +421,8 @@
               <!-- bg open -->
               <span class="fixed bg-gray-900 bg-opacity-70 w-full h-full inset-x-0 top-0"></span>
 
-<nav id="mobile-nav" class="flex flex-col ltr:right-0 rtl:left-0 w-72 fixed top-0 bg-white dark:bg-gray-800 h-full overflow-auto z-40 scrollbars show" x-show="open" @click.away="open=false" x-description="Mobile menu" role="menu" aria-orientation="vertical" aria-labelledby="navbartoggle" x-transition:enter="transform transition-transform duration-300" x-transition:enter-start="ltr:translate-x-full rtl:-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transform transition-transform duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="ltr:translate-x-full rtl:-translate-x-full" style="display: none;">
-                <div class="p-6 bg-indigo-500 text-gray-100 border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+<nav id="mobile-nav" class="flex flex-col ltr:right-0 rtl:left-0 w-72 fixed top-0 bg-white  h-full overflow-auto z-40 scrollbars show" x-show="open" @click.away="open=false" x-description="Mobile menu" role="menu" aria-orientation="vertical" aria-labelledby="navbartoggle" x-transition:enter="transform transition-transform duration-300" x-transition:enter-start="ltr:translate-x-full rtl:-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transform transition-transform duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="ltr:translate-x-full rtl:-translate-x-full" style="display: none;">
+                <div class="p-6 bg-indigo-500 text-gray-100 border-b border-gray-200 " bis_skin_checked="1">
                   <div class="flex flex-row justify-between" bis_skin_checked="1">
                     <h3 class="text-md font-bold">Customizer</h3>
                     <button @click="open = false" type="button" class="inline-block w-4 h-4">
@@ -486,45 +431,45 @@
                     </button>
                   </div>
                 </div>
-                <div class="py-3 px-6 border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                <div class="py-3 px-6 border-b border-gray-200 " bis_skin_checked="1">
                   <p class="text-base text-semibold">Color Scheme</p>
                   <div class="flex flex-row" bis_skin_checked="1">
                     <div class="relative inline-block w-8 py-3 mt-0.5 ltr:mr-3 rtl:ml-3 align-middle select-none transition duration-200 ease-in" bis_skin_checked="1">
-                      <input type="checkbox" name="lightdark" id="lightdark" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white dark:bg-gray-900 border-2 dark:border-gray-700 appearance-none cursor-pointer">
-                      <label for="lightdark" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 dark:bg-gray-700 cursor-pointer"></label>
+                      <input type="checkbox" name="lightdark" id="lightdark" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white  border-2  appearance-none cursor-pointer">
+                      <label for="lightdark" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300  cursor-pointer"></label>
                     </div>
                     <p class="text-sm text-gray-500 self-center">Light and Dark</p>
                   </div>
                 </div>
-                <div class="py-3 px-6 border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                <div class="py-3 px-6 border-b border-gray-200 " bis_skin_checked="1">
                   <p class="text-base text-semibold">Sidebar Color</p>
                   <div class="flex flex-row" bis_skin_checked="1">
                     <div class="relative inline-block w-8 py-3 mt-0.5 ltr:mr-3 rtl:ml-3 align-middle select-none transition duration-200 ease-in" bis_skin_checked="1">
-                      <input type="checkbox" name="sidecolor" id="sidecolor" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white dark:bg-gray-900 border-2 dark:border-gray-700 appearance-none cursor-pointer">
-                      <label for="sidecolor" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 dark:bg-gray-700 cursor-pointer"></label>
+                      <input type="checkbox" name="sidecolor" id="sidecolor" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white  border-2  appearance-none cursor-pointer">
+                      <label for="sidecolor" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300  cursor-pointer"></label>
                     </div>
                     <p class="text-sm text-gray-500 self-center">Light and Dark</p>
                   </div>
                 </div>
-                <div class="py-3 px-6 border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                <div class="py-3 px-6 border-b border-gray-200 " bis_skin_checked="1">
                   <p class="text-base text-semibold">Direction</p>
                   <div class="flex flex-row" bis_skin_checked="1">
                     <div class="relative inline-block w-8 py-3 mt-0.5 ltr:mr-3 rtl:ml-3 align-middle select-none transition duration-200 ease-in" bis_skin_checked="1">
-                      <input type="checkbox" name="rtlmode" id="rtlmode" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white dark:bg-gray-900 border-2 dark:border-gray-700 appearance-none cursor-pointer">
-                      <label for="rtlmode" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 dark:bg-gray-700 cursor-pointer"></label>
+                      <input type="checkbox" name="rtlmode" id="rtlmode" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white  border-2  appearance-none cursor-pointer">
+                      <label for="rtlmode" class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300  cursor-pointer"></label>
                     </div>
                     <p class="text-sm text-gray-500 self-center">LTR and RTL</p>
                   </div>
                 </div>
-                <div class="py-3 px-6 border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                <div class="py-3 px-6 border-b border-gray-200 " bis_skin_checked="1">
                   <p class="text-base text-semibold">Layout</p>
                   <div class="relative mb-3" bis_skin_checked="1">
-                    <a href="index.html" class="inline-block py-2 px-2.5 mt-2 rounded text-sm text-gray-500 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-20 dark:hover:bg-opacity-60 hover:text-indigo-500 hover:bg-gray-200 self-center">Default</a>
-                    <a href="layout-compact.html" class="inline-block py-2 px-2.5 mt-2 rounded text-sm text-gray-500 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-20 dark:hover:bg-opacity-60 hover:text-indigo-500 hover:bg-gray-200 self-center">Compact</a>
-                    <a href="layout-topnav.html" class="inline-block py-2 px-2.5 mt-2 rounded text-sm text-gray-500 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-20 dark:hover:bg-opacity-60 hover:text-indigo-500 hover:bg-gray-200 self-center">Topnav</a>
+                    <a href="index.html" class="inline-block py-2 px-2.5 mt-2 rounded text-sm text-gray-500 bg-gray-100   hover:text-indigo-500 hover:bg-gray-200 self-center">Default</a>
+                    <a href="layout-compact.html" class="inline-block py-2 px-2.5 mt-2 rounded text-sm text-gray-500 bg-gray-100   hover:text-indigo-500 hover:bg-gray-200 self-center">Compact</a>
+                    <a href="layout-topnav.html" class="inline-block py-2 px-2.5 mt-2 rounded text-sm text-gray-500 bg-gray-100   hover:text-indigo-500 hover:bg-gray-200 self-center">Topnav</a>
                   </div>
                 </div>
-                <div id="customcolor" class="py-3 px-6 border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                <div id="customcolor" class="py-3 px-6 border-b border-gray-200 " bis_skin_checked="1">
                   <p class="text-base text-semibold">Primary Color</p>
                   <div class="relative my-3" bis_skin_checked="1">
                     <div id="custred" title="red" class="inline-block p-3 ltr:mr-1.5 rtl:ml-1.5 bg-red-500 hover:opacity-90 rounded-full cursor-pointer" bis_skin_checked="1"></div>
@@ -567,8 +512,8 @@
               </div>
             </a>
 
-            <div x-show="open" @click.away="open = false" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="w-72 origin-top-right absolute ltr:-right-36 md:ltr:right-0 rtl:-left-36 md:rtl:left-0 rounded top-full z-50 py-0.5 ltr:text-left rtl:text-right bg-white dark:bg-gray-800 border dark:border-gray-700 shadow-md" style="display: none;" bis_skin_checked="1">
-              <div class="p-3 font-normal border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+            <div x-show="open" @click.away="open = false" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="w-72 origin-top-right absolute ltr:-right-36 md:ltr:right-0 rtl:-left-36 md:rtl:left-0 rounded top-full z-50 py-0.5 ltr:text-left rtl:text-right bg-white  border  shadow-md" style="display: none;" bis_skin_checked="1">
+              <div class="p-3 font-normal border-b border-gray-200 " bis_skin_checked="1">
                 <div class="relative" bis_skin_checked="1">
                   <div class="font-bold" bis_skin_checked="1">Messages</div>
                   <div x-data="{ open: false }" class="absolute top-0 ltr:right-0 rtl:left-0" bis_skin_checked="1">
@@ -578,10 +523,10 @@
                       </svg>
                       <!-- <i class="fas fa-search"></i> -->
                     </a>
-                    <div x-show="open" @click.away="open = false" class="origin-top-right absolute ltr:right-0 rtl:left-0 bg-white dark:bg-gray-700 z-10 rounded" style="min-width: 16rem; display: none;" bis_skin_checked="1">
+                    <div x-show="open" @click.away="open = false" class="origin-top-right absolute ltr:right-0 rtl:left-0 bg-white  z-10 rounded" style="min-width: 16rem; display: none;" bis_skin_checked="1">
                        <form class="inline-block w-full">
                         <div class="flex flex-wrap items-stretch w-full relative" bis_skin_checked="1">
-                          <input type="text" class="flex-shrink flex-grow max-w-full leading-5 relative text-sm py-2 px-4 ltr:rounded-l rtl:rounded-r text-gray-800 bg-gray-100 overflow-x-auto focus:outline-none border border-gray-100 focus:border-gray-200 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" placeholder="Search messages…" aria-label="Search">
+                          <input type="text" class="flex-shrink flex-grow max-w-full leading-5 relative text-sm py-2 px-4 ltr:rounded-l rtl:rounded-r text-gray-800 bg-gray-100 overflow-x-auto focus:outline-none border border-gray-100 focus:border-gray-200 focus:ring-0 " placeholder="Search messages…" aria-label="Search">
                           <div class="flex -mr-px" bis_skin_checked="1">
                             <button class="flex items-center py-2 px-4 ltr:-ml-1 rtl:-mr-1 ltr:rounded-r rtl:rounded-l leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0" type="button">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -609,7 +554,7 @@
               </div>
               <div class="max-h-60 overflow-y-auto scrollbars show" bis_skin_checked="1">
                 <a href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:bg-opacity-40 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="relative" bis_skin_checked="1">
                         <img src="src/img/avatar/avatar2.png" class="h-10 w-10 rounded-full mx-auto" alt="Daniel Esteban">
@@ -624,7 +569,7 @@
                   </div>
                 </a>
                 <a href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:bg-opacity-40 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="relative" bis_skin_checked="1">
                         <img src="src/img/avatar/avatar3.png" class="h-10 w-10 rounded-full mx-auto" alt="Carlos Garcia">
@@ -639,7 +584,7 @@
                   </div>
                 </a>
                 <a href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:bg-opacity-40 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="relative" bis_skin_checked="1">
                         <img src="src/img/avatar/avatar4.png" class="h-10 w-10 rounded-full mx-auto" alt="Steven Rey">
@@ -654,7 +599,7 @@
                   </div>
                 </a>
                 <a href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:hover:bg-gray-900 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="relative" bis_skin_checked="1">
                         <img src="src/img/avatar/avatar.png" class="h-10 w-10 rounded-full mx-auto" alt="Roman Davis">
@@ -687,8 +632,8 @@
               </div>
             </a>
 
-            <div x-show="open" @click.away="open = false" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="w-72 origin-top-right absolute ltr:right-0 rtl:left-0 rounded top-full z-50 py-0.5 ltr:text-left rtl:text-right bg-white dark:bg-gray-800 border dark:border-gray-700 shadow-md" style="display: none;" bis_skin_checked="1">
-              <div class="p-3 font-normal border-b border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+            <div x-show="open" @click.away="open = false" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="w-72 origin-top-right absolute ltr:right-0 rtl:left-0 rounded top-full z-50 py-0.5 ltr:text-left rtl:text-right bg-white  shadow-md" style="display: none;" bis_skin_checked="1">
+              <div class="p-3 font-normal border-b border-gray-200 " bis_skin_checked="1">
                 <div class="relative" bis_skin_checked="1">
                   <div class="font-bold" bis_skin_checked="1">Notifications</div>
                   <div class="absolute top-0 ltr:right-0 rtl:left-0" bis_skin_checked="1">
@@ -704,7 +649,7 @@
               </div>
               <div class="max-h-60 overflow-y-auto scrollbars show" bis_skin_checked="1">
                 <a class="relative" href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:bg-opacity-40 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100 bg-gray-50" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="flex justify-center mx-auto w-8 h-8 rounded-full bg-indigo-500 text-white" bis_skin_checked="1">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="self-center w-4 h-4 bi bi-calendar4-event" viewBox="0 0 16 16">
@@ -722,7 +667,7 @@
                   </div>
                 </a>
                 <a class="relative" href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:hover:bg-gray-900 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="flex justify-center mx-auto w-8 h-8 rounded-full bg-indigo-500 text-white" bis_skin_checked="1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="self-center w-4 h-4 bi bi-hand-thumbs-up" viewBox="0 0 16 16">
@@ -732,13 +677,13 @@
                       </div>
                     </div>
                     <div class="flex-shrink max-w-full px-2 w-3/4" bis_skin_checked="1">
-                      <div class="text-gray-500 text-sm mt-1" bis_skin_checked="1"><b class="text-gray-600 dark:text-gray-400">Daniel</b> like your post: <b class="text-gray-600 dark:text-gray-400">Hello World!</b></div>
+                      <div class="text-gray-500 text-sm mt-1" bis_skin_checked="1"><b class="text-gray-600 ">Daniel</b> like your post: <b class="text-gray-600 ">Hello World!</b></div>
                       <div class="text-gray-500 text-sm mt-1" bis_skin_checked="1">3h ago</div>
                     </div>
                   </div>
                 </a>
                 <a class="relative" href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:hover:bg-gray-900 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="flex justify-center mx-auto w-8 h-8 rounded-full bg-indigo-500 text-white" bis_skin_checked="1">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="self-center w-4 h-4 bi bi-hdd-stack" viewBox="0 0 16 16">
@@ -757,7 +702,7 @@
                   </div>
                 </a>
                 <a class="relative" href="#">
-                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200 dark:border-gray-700 dark:hover:bg-gray-900 dark:hover:bg-opacity-20 py-2 hover:bg-gray-100" bis_skin_checked="1">
+                  <div class="flex flex-wrap flex-row items-center border-b border-gray-200  py-2 hover:bg-gray-100" bis_skin_checked="1">
                     <div class="flex-shrink max-w-full px-2 w-1/4 text-center" bis_skin_checked="1">
                       <div class="flex justify-center mx-auto w-8 h-8 rounded-full bg-indigo-500 text-white" bis_skin_checked="1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="self-center w-4 h-4 bi bi-chat-left" viewBox="0 0 16 16">
@@ -788,7 +733,7 @@
               </div>
               <span class="hidden md:block ltr:ml-1 rtl:mr-1 self-center">Ari Budin</span>
             </a>
-            <ul x-show="open" @click.away="open = false" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute ltr:right-0 rtl:left-0 rounded top-full z-50 py-0.5 ltr:text-left rtl:text-right bg-white dark:bg-gray-800 border dark:border-gray-700 shadow-md" style="min-width:12rem;display: none;">
+            <ul x-show="open" @click.away="open = false" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute ltr:right-0 rtl:left-0 rounded top-full z-50 py-0.5 ltr:text-left rtl:text-right bg-white  shadow-md" style="min-width:12rem;display: none;">
               <li class="relative">
                 <div class="flex flex-wrap flex-row -mx-4 px-3 py-4 items-center" bis_skin_checked="1">
                   <div class="flex-shrink max-w-full px-4 w-1/3" bis_skin_checked="1">
@@ -801,7 +746,7 @@
                 </div>
               </li>
               <li class="relative">
-                <hr class="border-t border-gray-200 dark:border-gray-700 my-0">
+                <hr class="border-t border-gray-200  my-0">
               </li>
               <li class="relative">
                 <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500" href="#">
@@ -831,7 +776,7 @@
                   </a>
               </li>
               <li class="relative">
-                <hr class="border-t border-gray-200 dark:border-gray-700 my-0">
+                <hr class="border-t border-gray-200  my-0">
               </li>
               <li class="relative">
                 <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-indigo-500" href="#">
