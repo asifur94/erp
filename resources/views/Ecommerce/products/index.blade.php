@@ -7,7 +7,7 @@
               <p class="text-xl font-bold mt-3 mb-5">Manage Products</p>
             </div>
             <div class="flex-shrink max-w-full px-4 w-full mb-6" bis_skin_checked="1">
-              <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full" bis_skin_checked="1">
+              <div class="p-6 bg-white rounded-lg shadow-lg h-full" bis_skin_checked="1">
                 <div class="flex flex-wrap flex-row -mx-4" bis_skin_checked="1">
                   <div class="flex-shrink max-w-full px-4 w-full" bis_skin_checked="1">
                     <div class="md:flex md:justify-between" bis_skin_checked="1">
@@ -20,14 +20,14 @@
                       <div bis_skin_checked="1">
                         <div id="bulk-actions" bis_skin_checked="1">
                           <label class="flex flex-wrap flex-row">
-                            <select id="bulk_actions" name="bulk_actions" class="inline-block leading-5 relative py-2 ltr:pl-3 ltr:pr-8 rtl:pr-3 rtl:pl-8 mb-3 rounded bg-gray-100 border border-gray-200 overflow-x-auto focus:outline-none focus:border-gray-300 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600 select-caret appearance-none">
+                            <select id="bulk_actions" name="bulk_actions" class="inline-block leading-5 relative py-2 ltr:pl-3 ltr:pr-8 rtl:pr-3 rtl:pl-8 mb-3 rounded bg-gray-100 border border-gray-200 overflow-x-auto focus:outline-none focus:border-gray-300 focus:ring-0 select-caret appearance-none">
                               <option>Action</option>
                               <option value="activate">In stock</option>
                               <option value="deactivate">Deactivate</option>
                               <option value="out">Out stock</option>
                               <option value="delete">Delete</option>
                             </select>
-                            <input type="submit" id="bulk_apply" class="ltr:ml-2 rtl:mr-2 py-2 px-4 inline-block text-center mb-3 rounded leading-5 border hover:bg-gray-300 dark:bg-gray-900 dark:bg-opacity-40 dark:border-gray-800 dark:hover:bg-gray-900 focus:outline-none focus:ring-0 cursor-pointer" value="Apply">
+                            <input type="submit" id="bulk_apply" class="ltr:ml-2 rtl:mr-2 py-2 px-4 inline-block text-center mb-3 rounded leading-5 border hover:bg-gray-300 focus:outline-none focus:ring-0 cursor-pointer" value="Apply">
                           </label>
                         </div>
                       </div>
@@ -35,15 +35,15 @@
 
                     <div class="w-full mb-6 overflow-x-auto" bis_skin_checked="1">
                       <form action="">
-                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns" bis_skin_checked="1"><div class="dataTable-top" bis_skin_checked="1"><div class="dataTable-dropdown" bis_skin_checked="1"><label><select class="dataTable-selector"><option value="5">5</option><option value="10" selected="">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select> entries per page</label></div><div class="dataTable-search" bis_skin_checked="1"><input class="dataTable-input" placeholder="Search..." type="text"></div></div><div class="dataTable-container" bis_skin_checked="1"><table class="table-sorter table-bordered w-full ltr:text-left rtl:text-right text-gray-600 dark:text-gray-400 dataTable-table">
+                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns" bis_skin_checked="1"><div class="dataTable-top" bis_skin_checked="1"><div class="dataTable-dropdown" bis_skin_checked="1"><label><select class="dataTable-selector"><option value="5">5</option><option value="10" selected="">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select> entries per page</label></div><div class="dataTable-search" bis_skin_checked="1"><input class="dataTable-input" placeholder="Search..." type="text"></div></div><div class="dataTable-container" bis_skin_checked="1"><table class="table-sorter table-bordered w-full ltr:text-left rtl:text-right text-gray-600 dataTable-table">
                           <thead>
-                            <tr class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40"><th data-sortable="false" style="width: 4.22406%;"><input id="check_all" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></th><th data-sortable="" style="width: 49.4031%;"><a href="#" class="dataTable-sorter">Products</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 11.3866%;"><a href="#" class="dataTable-sorter">Update</a></th><th data-sortable="" style="width: 9.27456%;"><a href="#" class="dataTable-sorter">Pricing</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 6.51974%;"><a href="#" class="dataTable-sorter">Qty</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 10.8356%;"><a href="#" class="dataTable-sorter">Status</a></th><th data-sortable="false" style="width: 8.35629%;">Actions</th></tr>
+                            <tr class="bg-gray-100"><th data-sortable="false" style="width: 4.22406%;"><input id="check_all" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></th><th data-sortable="" style="width: 49.4031%;"><a href="#" class="dataTable-sorter">Products</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 11.3866%;"><a href="#" class="dataTable-sorter">Update</a></th><th data-sortable="" style="width: 9.27456%;"><a href="#" class="dataTable-sorter">Pricing</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 6.51974%;"><a href="#" class="dataTable-sorter">Qty</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 10.8356%;"><a href="#" class="dataTable-sorter">Status</a></th><th data-sortable="false" style="width: 8.35629%;">Actions</th></tr>
                           </thead>
-                          <tbody><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                          <tbody><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product1.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Women's Race Running Shoe
                                       <div class="pt-1 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -64,11 +64,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product2.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Womens Free RN Flyknit 2018
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -89,11 +89,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product3.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Women's Sneaker Running Shoes
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -114,11 +114,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product4.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Women's Air Zoom Pegasus 36 Running Shoes
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -139,11 +139,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product5.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Women's Air Max 270 Running Shoe
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -164,11 +164,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product6.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Women's Flex Trainer 9 Sneaker
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -189,11 +189,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product7.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Women's Gymnastics Tennis Shoes
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -214,11 +214,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product1.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                     Nike Women's Court Lite 2 Tennis Shoe
                                     <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -239,11 +239,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product2.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Women's Low-Top Basketball Shoe
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
@@ -264,11 +264,11 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
+                              </td></tr><tr><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td><td>
                                 <a href="#">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8" src="../src/img/products/product3.jpg"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                    <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
                                       Nike Reposto Womens Running Casual Shoe Cz5630-002
                                       <div class="pt-3 text-sm italic text-gray-500 w-full" bis_skin_checked="1">
                                         Women Shoes
