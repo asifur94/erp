@@ -5,7 +5,7 @@
     </div>
 
 
-    <nav id="sidebar-menu" x-description="Mobile menu" x-bind:aria-expanded="open" :class="{ 'w-64 ml-0 md:w-20 sidebar-small': open, 'w-64 -ml-64 md:ml-0': !(open) }" class="fixed transition-all duration-500 ease-in-out h-screen bg-slate-100  text-slate-500 z-40 w-64 ml-0 md:w-20 sidebar-small" aria-expanded="true">
+    <nav id="sidebar-menu" x-description="Mobile menu" x-bind:aria-expanded="open" :class="{ 'w-64 ml-0 md:w-20 sidebar-small': open, 'w-64 -ml-64 md:ml-0': !(open) }" class="fixed transition-all duration-500 ease-in-out h-screen bg-white  text-slate-500 z-40 w-64 ml-0 md:w-20 sidebar-small" aria-expanded="true">
         <div class="sidebar-small-overflow h-full overflow-y-auto scrollbars show" >
           <div class="w-full flex flex-row justify-center py-5" >
             <h2 class="flex flex-row items-center text-xl text-slate-100 font-semibold">
