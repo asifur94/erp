@@ -10,17 +10,17 @@
             <div class="bg-[#100937] padding-l-30 padding-r-26 pt-[27px] pb-40">
                 <h4 class="text-white text-2xl font-bold mb-4">Employees</h4>
                 <div class="flex items-center gap-x-4">
-                    <a href="{{route('employee.index')}}" class="text-[#A2A6AA] font-medium text-sm">Employee</a>
+                    <a href="{{route('hr.employee.index')}}" class="text-[#A2A6AA] font-medium text-sm">Employee</a>
                     <span class="text-white">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                            stroke="currentColor" class="w-4 h-4">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
                       </svg>
                     </span>
-                    <a href="{{ route('employee.create') }}" class="text-white font-bold text-sm">Add Employees</a>
+                    <a href="{{ route('hr.employee.create') }}" class="text-white font-bold text-sm">Add Employees</a>
                 </div>
             </div>
-            <!-- Form -->
+           <!-- Form -->
             <div class=" padding-l-30 pb-[30px] padding-r-26 -mt-28">
 
             </div>

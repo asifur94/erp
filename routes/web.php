@@ -18,8 +18,45 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('product', function () {
+    return view('ecommerce.products.index');
+});
 
+Route::get('customer', function () {
+    return view('ecommerce.customers.index');
+});
 
+Route::get('order', function () {
+    return view('ecommerce.orders.index');
+});
+
+Route::get('checkout', function () {
+    return view('ecommerce.checkouts.index');
+});
+
+Route::get('seller', function () {
+    return view('ecommerce.sellers.index');
+});
+
+Route::get('product', function () {
+    return view('ecommerce.products.index');
+});
+
+Route::get('not found', function () {
+    return view('404');
+});
+
+Route::get('employee', function () {
+    return view('hr.employee.index');
+});
+
+Route::get('attendance', function () {
+    return view('hr.attendance.index');
+});
+
+Route::get('leave', function () {
+    return view('hr.leave.index');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -32,11 +69,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-    Route::resource('/shipment', ShipmentController::class);
-    Route::resource('/payment', PaymentController::class);
-    Route::resource('/location', LocationController::class);
-    Route::resource('/employee', EmployeeController::class);
-    Route::resource('/Product', ProductController::class);
+
 });
 
 require __DIR__.'/auth.php';

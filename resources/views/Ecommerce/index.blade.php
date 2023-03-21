@@ -39,7 +39,7 @@
                                 <option value="Dec">Dec</option>
                             </select>
                         </div>
-                        <a href="{{route('employee.create')}}" class="bg-blue-600 py-1 px-2 text-white flex gap-2 items-center">Add New
+                        <a href="" class="bg-blue-600 py-1 px-2 text-white flex gap-2 items-center">Add New
                             <span><img src="{{ asset('assets/img/Iconly/Light/plus.svg') }}"
                                        alt=""></span></a>
                     </div>
