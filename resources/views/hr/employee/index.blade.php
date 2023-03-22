@@ -417,21 +417,22 @@
                         </tbody>
                         </table>
                     </div>
-                    <div class="dataTable-bottom" >
-                        <div class="dataTable-info" >Showing 1 to 10 of 15 entries</div><nav class="dataTable-pagination">
-                            <ul class="dataTable-pagination-list">
-                                <li class="active">
-                                    <a href="#" data-page="1">1</a>
-                                </li>
-                                <li class="">
-                                    <a href="#" data-page="2">2</a>
-                                </li>
-                                <li class="pager">
-                                    <a href="#" data-page="2">›</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                   <!--Pagination-->
+        <div class="flex mt-10 items-center justify-between">
+            <p class="min-w-max text-gray-600">
+                Showing Results 10 of 128
+            </p>
+            <div class="min-w-max flex gap-2 items-center">
+                <button class="w-8 h-8 rotate-180 bg-white flex items-center justify-center"><img
+                        src="{{ asset('assets/img/Iconly/Light/arrow-right.svg') }}" alt=""></button>
+                <p
+                    class="w-8 h-8 bg-white border border-gray-100 flex items-center justify-center text-blue-600 text-[10px]">
+                    10</p>
+                <p class="text-xs text-gray-600">of 128</p>
+                <button class="w-8 h-8 bg-white flex items-center justify-center"><img
+                        src="{{ asset('assets/img/Iconly/Light/arrow-right.svg') }}" alt=""></button>
+            </div>
+        </div>
                 </div>
 
                         <!-- select all -->

@@ -31,7 +31,7 @@ Route::get('order', function () {
 });
 
 Route::get('checkout', function () {
-    return view('ecommerce.checkouts.index');
+    return view('ecommerce.checkout.index');
 });
 
 Route::get('seller', function () {

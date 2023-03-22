@@ -9,7 +9,9 @@
         <div class="sidebar-small-overflow h-full overflow-y-auto scrollbars show" >
           <div class="w-full flex flex-row justify-center py-5" >
             <h2 class="flex flex-row items-center text-xl text-slate-100 font-semibold">
-              <img class="w-7 h-7" alt="Logo" src="src/img/logo/logo11.png">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline-block h-5 w-5 text-cyan-500 ltr:mr-2 rtl:ml-2 bi bi-columns-gap" viewBox="0 0 16 16">
+                    <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"></path>
+                  </svg>
               <span class="ml-1.5 sidebar-small-text text-slate-800">ERP</span>
             </h2>
           </div>
@@ -19,10 +21,15 @@
             <!-- dropdown -->
             <li class="relative">
               <a :class="{ 'text-cyan-500 bg-slate-700': selected == 1 }" @click="selected !== 1 ? selected = 1 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                <i class="sidebar-small-icon bx bx-bar-chart-square mr-1"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"></path>
+                  </svg>
                 <span class="sidebar-small-text">Dashboards</span>
                 <!-- caret -->
                 <span class="inline-block float-right sidebar-small-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="transform transition duration-300 mt-1.5 bi bi-chevron-down ltr:-rotate-90 rtl:rotate-90" :class="{ 'rotate-0': selected == 1, 'ltr:-rotate-90 rtl:rotate-90': !(selected == 1) }" width=".8rem" height=".8rem" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                      </svg>
                   <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 1, '-rotate-90': !(selected == 1) }"></i>
                 </span>
               </a>
@@ -53,7 +60,9 @@
             <!-- dropdown -->
             <li class="relative">
               <a :class="{ 'text-cyan-500 bg-slate-700': selected == 3 }" @click="selected !== 3 ? selected = 3 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                <i class="sidebar-small-icon bx bx-grid-alt mr-1"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"></path>
+                  </svg>
                 <span class="sidebar-small-text">Ecommerce</span>
                 <!-- caret -->
                 <span class="sidebar-small-text inline-block float-right">
@@ -93,7 +102,9 @@
             <!-- dropdown -->
             <li class="relative">
               <a :class="{ 'text-cyan-500 bg-slate-700': selected == 4 }" @click="selected !== 4 ? selected = 4 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                <i class="sidebar-small-icon bx bx-file mr-1"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-briefcase" viewBox="0 0 16 16">
+                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"></path>
+                  </svg>
                 <span class="sidebar-small-text">HR</span>
                 <!-- caret -->
                 <span class="sidebar-small-text inline-block float-right">

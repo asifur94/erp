@@ -8,7 +8,7 @@
 
 
 
-        <div x-bind:aria-expanded="open" :class="{ 'ml-0 mr-0 md:ml-20 md:mr-0': open, 'ml-0 mr-0 md:ml-64': !(open) }" class="min-h-screen relative mt-2 transition-all duration-500 ease-in-out ml-0 mr-0 md:ml-20 md:mr-0" aria-expanded="true" bis_skin_checked="1">
+        <div x-bind:aria-expanded="open" :class="{ 'ml-0 mr-0 md:ml-20 md:mr-0': open, 'ml-0 mr-0 md:ml-64': !(open) }" class="min-h-screen relative mt-2 transition-all duration-500 ease-in-out ml-0 mr-0 md:ml-20 md:mr-0" aria-expanded="true" >
 
             @include('layouts.header')
 
@@ -16,25 +16,25 @@
 
 
     <main class="pt-20 -mt-2">
-        <div class="mx-auto p-2" bis_skin_checked="1">
+        <div class="mx-auto p-2" >
           <!-- row -->
-          <div class="flex flex-wrap flex-row" bis_skin_checked="1">
-            <div class="flex-shrink max-w-full px-4 w-full" bis_skin_checked="1">
+          <div class="flex flex-wrap flex-row" >
+            <div class="flex-shrink max-w-full px-4 w-full" >
               <p class="text-xl font-bold mt-3 mb-5">Sellers</p>
             </div>
-            <div class="flex-shrink max-w-full px-4 w-full mb-6" bis_skin_checked="1">
-              <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full" bis_skin_checked="1">
-                <div class="flex flex-wrap flex-row -mx-4" bis_skin_checked="1">
-                  <div class="flex-shrink max-w-full px-4 w-full" bis_skin_checked="1">
-                    <div class="md:flex md:justify-between" bis_skin_checked="1">
-                      <div bis_skin_checked="1">
+            <div class="flex-shrink max-w-full px-4 w-full mb-6" >
+              <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full" >
+                <div class="flex flex-wrap flex-row -mx-4" >
+                  <div class="flex-shrink max-w-full px-4 w-full" >
+                    <div class="md:flex md:justify-between" >
+                      <div >
                         <a href="#" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Add new <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="inline-block ltr:ml-1 rtl:mr-1 bi bi-plus-lg" viewBox="0 0 16 16">
                           <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"></path>
                         </svg></a>
                       </div>
 
-                      <div bis_skin_checked="1">
-                        <div id="bulk-actions" bis_skin_checked="1">
+                      <div >
+                        <div id="bulk-actions" >
                           <label class="flex flex-wrap flex-row">
                             <select id="bulk_actions" name="bulk_actions" class="inline-block leading-5 relative py-2 ltr:pl-3 ltr:pr-8 rtl:pr-3 rtl:pl-8 mb-3 rounded bg-gray-100 border border-gray-200 overflow-x-auto focus:outline-none focus:border-gray-300 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600 select-caret appearance-none">
                               <option value="">Action</option>
@@ -46,17 +46,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-full mb-6 overflow-x-auto" bis_skin_checked="1">
+                    <div class="w-full mb-6 overflow-x-auto" >
                       <form action="">
-                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns" bis_skin_checked="1"><div class="dataTable-top" bis_skin_checked="1"><div class="dataTable-dropdown" bis_skin_checked="1"><label><select class="dataTable-selector"><option value="5">5</option><option value="10" selected="">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select> entries per page</label></div><div class="dataTable-search" bis_skin_checked="1"><input class="dataTable-input" placeholder="Search..." type="text"></div></div><div class="dataTable-container" bis_skin_checked="1"><table class="table-sorter table-bordered w-full ltr:text-left rtl:text-right text-gray-600 dark:text-gray-400 dataTable-table">
+                        <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns" ><div class="dataTable-top" ><div class="dataTable-dropdown" ><label><select class="dataTable-selector"><option value="5">5</option><option value="10" selected="">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select> entries per page</label></div><div class="dataTable-search" ><input class="dataTable-input" placeholder="Search..." type="text"></div></div><div class="dataTable-container" ><table class="table-sorter table-bordered w-full ltr:text-left rtl:text-right text-gray-600 dark:text-gray-400 dataTable-table">
                           <thead>
                             <tr class="bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40"><th data-sortable="false" style="width: 6.44567%;"><input id="check_all" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></th><th data-sortable="" style="width: 20.9024%;"><a href="#" class="dataTable-sorter">Sellers</a></th><th class="hidden sm:table-cell" data-sortable="" style="width: 16.2063%;"><a href="#" class="dataTable-sorter">Store</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 17.5875%;"><a href="#" class="dataTable-sorter">Date added</a></th><th class="hidden lg:table-cell" data-sortable="" style="width: 12.7993%;"><a href="#" class="dataTable-sorter">Status</a></th><th class="text-center hidden lg:table-cell" data-sortable="" style="width: 13.2597%;"><a href="#" class="dataTable-sorter">Balance</a></th><th data-sortable="false" style="width: 12.7993%;">Actions</th></tr>
                           </thead>
                           <tbody><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Ari Budin
                                     </div>
                                   </div>
@@ -78,9 +78,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Youna
                                     </div>
                                   </div>
@@ -102,9 +102,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Ari Budin
                                     </div>
                                   </div>
@@ -126,9 +126,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Youna
                                     </div>
                                   </div>
@@ -150,9 +150,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Ari Budin
                                     </div>
                                   </div>
@@ -174,9 +174,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Youna
                                     </div>
                                   </div>
@@ -198,9 +198,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Ari Budin
                                     </div>
                                   </div>
@@ -222,9 +222,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Youna
                                     </div>
                                   </div>
@@ -246,9 +246,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar2.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Ari Budin
                                     </div>
                                   </div>
@@ -270,9 +270,9 @@
                                 </a>
                               </td></tr><tr class="border-b dark:border-gray-700"><td><input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-700"></td><td>
                                 <a href="#">
-                                  <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
-                                    <div class="self-center" bis_skin_checked="1"><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
-                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" bis_skin_checked="1">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full" src="../src/img/avatar/avatar.png"></div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Youna
                                     </div>
                                   </div>
@@ -292,8 +292,28 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
                                   </svg>
                                 </a>
-                              </td></tr></tbody>
-                        </table></div><div class="dataTable-bottom" bis_skin_checked="1"><div class="dataTable-info" bis_skin_checked="1">Showing 1 to 10 of 12 entries</div><nav class="dataTable-pagination"><ul class="dataTable-pagination-list"><li class="active"><a href="#" data-page="1">1</a></li><li class=""><a href="#" data-page="2">2</a></li><li class="pager"><a href="#" data-page="2">›</a></li></ul></nav></div></div>
+                              </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Pagination-->
+        <div class="flex mt-10 items-center justify-between">
+            <p class="min-w-max text-gray-600">
+                Showing Results 10 of 128
+            </p>
+            <div class="min-w-max flex gap-2 items-center">
+                <button class="w-8 h-8 rotate-180 bg-white flex items-center justify-center"><img
+                        src="{{ asset('assets/img/Iconly/Light/arrow-right.svg') }}" alt=""></button>
+                <p
+                    class="w-8 h-8 bg-white border border-gray-100 flex items-center justify-center text-blue-600 text-[10px]">
+                    10</p>
+                <p class="text-xs text-gray-600">of 128</p>
+                <button class="w-8 h-8 bg-white flex items-center justify-center"><img
+                        src="{{ asset('assets/img/Iconly/Light/arrow-right.svg') }}" alt=""></button>
+            </div>
+        </div>
+                </div>
 
                         <!-- select all -->
                         <script type="text/javascript">

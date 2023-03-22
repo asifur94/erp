@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
 body {
     color: black;
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dark-theme {
@@ -56,6 +57,7 @@ body {
   .dataTable-selector {
     border-radius:0.25rem;
     border-width:1px;
+
     --tw-border-opacity:1;
     border-color:rgba(239, 240, 254, var(--tw-border-opacity));
     --tw-bg-opacity:1;
@@ -142,3 +144,85 @@ body {
     padding-top:1rem;
     padding-bottom:1rem;
   }
+
+
+
+/* Sidebar small  */
+@media (min-width: 768px) {
+    .sidebar-small {
+      position: absolute;
+    }
+    .sidebar-small .sidebar-small-text {
+      display: none;
+    }
+    .sidebar-small .sidebar-small-icon {
+      font-size: 1.5rem;
+    }
+    .sidebar-small .sidebar-small-overflow {
+      overflow: visible;
+    }
+    .sidebar-small .sidebar-small-menu ul {
+      background-color:rgb(15 23 42 / var(--tw-bg-opacity));
+      --tw-bg-opacity:0.9;
+    }
+    .dark .sidebar-small .sidebar-small-menu ul {
+      --tw-bg-opacity:0.8;
+    }
+    .sidebar-small .sidebar-small-menu ul {
+      display: none;
+      position: absolute;
+      padding: .25rem;
+      left: 101%;
+      margin-left: 0;
+      margin-top: -3rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+    .sidebar-small .sidebar-small-menu>li:hover>a {
+      --tw-bg-opacity:1;
+      background-color:rgb(51 65 85 / var(--tw-bg-opacity));
+      --tw-text-opacity:1;
+      color:rgb(6 182 212 / var(--tw-text-opacity));
+    }
+    .sidebar-small .sidebar-small-menu li:hover ul {
+      display: block !important;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
