@@ -8,18 +8,18 @@
 
 
 body {
-    color: black;
-    background-color: white;
+
     font-family: 'Poppins', sans-serif;
 }
 
-.dark-theme {
-    color: white;
-    background-color: black;
-}
 
 
 /*Custom Table Sorter css*/
+
+.dataTable-search {
+    float: right;
+    margin-top: -43px;
+}
 .dataTable-top, .dataTable-bottom {
     padding: 1rem 0;
   }
@@ -194,6 +194,19 @@ body {
 
 
 
+  .chat-app {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden
+}
+
+.min-h {
+    min-height: calc(100vh - 400px)
+}
+
+.chat-app .chat-room .fromMe {
+    flex-direction: row-reverse
+}
 
 
 

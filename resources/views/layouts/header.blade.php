@@ -181,7 +181,7 @@
             </a>
 
             <div x-show="open" @click.away="open = false" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition-all duration-200 ease-in" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="w-72 origin-top-right absolute -right-32 md:right-0 rounded top-full z-50 py-0.5 text-left bg-white  shadow-md"  style="">
-              <div class="p-3 font-normal border-b border-slate-200 dark:border-slate-700" >
+              <div class="p-3 font-normal border-b border-slate-200 " >
                 <div class="relative w-full flex flex-row justify-between items-center" >
                   <div class="text-sm font-bold" >Messages</div>
                   <a href="#" class="inline-block" title="Mark all as read">
@@ -355,7 +355,7 @@
           <li x-data="{ open: false }" class="relative">
             <a href="javascript:;" class="pt-2 pl-3 flex text-sm rounded-full focus:outline-none" id="user-menu-button" @click="open = ! open">
               <div class="relative" >
-                <img class="h-10 w-10 rounded-full border border-slate-200 bg-slate-700" src="src/img/avatar/avatar1.jpg" alt="avatar">
+                <img class="h-10 w-10 rounded-full border border-slate-200 bg-slate-700" src="{{asset('assets/img/profile.png')}}" alt="avatar">
                 <span title="online" class="flex justify-center absolute -bottom-0.5 right-1 text-center bg-green-500 border border-white w-3 h-3 rounded-full"></span>
               </div>
             </a>

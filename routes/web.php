@@ -38,8 +38,8 @@ Route::get('seller', function () {
     return view('ecommerce.sellers.index');
 });
 
-Route::get('product', function () {
-    return view('ecommerce.products.index');
+Route::get('calender', function () {
+    return view('calender.index');
 });
 
 Route::get('not found', function () {

@@ -115,6 +115,7 @@
               <!-- dropdown menu -->
               <ul x-show="selected == 4" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
                 <li class="relative">
+
                   <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'employee' }}">Employees</a>
                 </li>
                 <li class="relative">
@@ -123,9 +124,165 @@
                 <li class="relative">
                   <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'leave' }}">Leave</a>
                 </li>
+                <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'salary' }}">Salary</a>
+                  </li>
+                  {{-- <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'leave' }}">Leave</a>
+                  </li> --}}
+
 
               </ul>
             </li>
+
+
+              <!-- dropdown -->
+              <li class="relative">
+                <a :class="{ 'text-cyan-500 bg-slate-700': selected == 4 }" @click="selected !== 4 ? selected = 4 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
+                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/account-service.svg')}}" alt="">
+                  <span class="sidebar-small-text">Administrative</span>
+                  <!-- caret -->
+                  <span class="sidebar-small-text inline-block float-right">
+                    <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 5, '-rotate-90': !(selected == 5) }"></i>
+                  </span>
+                </a>
+
+                <!-- dropdown menu -->
+                <ul x-show="selected == 5" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
+                  <li class="relative">
+
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'employee' }}">Employees</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'attendance' }}">Attendance</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'leave' }}">Leave</a>
+                  </li>
+                  <li class="relative">
+                      <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'salary' }}">Salary</a>
+                    </li>
+                    {{-- <li class="relative">
+                      <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'leave' }}">Leave</a>
+                    </li> --}}
+
+
+                </ul>
+              </li>
+              <!-- dropdown -->
+            <li class="relative">
+                <a :class="{ 'text-cyan-500 bg-slate-700': selected == 6 }" @click="selected !== 6 ? selected = 6 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
+                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/money.svg')}}" alt="">
+                  <span class="sidebar-small-text">Accounts</span>
+                  <!-- caret -->
+                  <span class="sidebar-small-text inline-block float-right">
+                    <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 6, '-rotate-90': !(selected == 6) }"></i>
+                  </span>
+                </a>
+
+                <!-- dropdown menu -->
+                <ul x-show="selected == 6" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#accordion">Accordion</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#alerts">Alerts</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#avatar">Avatar</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#badge">Badge</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#breadcrumb">Breadcrumb</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#buttons">Buttons</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#card">Card</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#carousel">Carousel</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#collapse">Collapse</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#dragdrop">Drag Drop</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#dropdowns">Dropdowns</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#layouts">Layouts</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#grid">Grid</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#list-group">List Group</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#modal">Modal</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#navbar">Navbar</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#notif">Notification</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#offcanvas">Offcanvas</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#popovers">Popovers</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#pricing">Pricing</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#progress">Progress</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#scrollbar">Scrollbar</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#spinners">Spinners</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#tabs">Tabs</a>
+                  </li>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#tooltips">Tooltips</a>
+                  </li>
+                </ul>
+              </li>
+
+
+              <li class="relative">
+                <a class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="{{ 'calender' }}">
+                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/Calendar.svg')}}" alt="">
+
+                  <span class="sidebar-small-text">Calender</span>
+                </a>
+              </li>
+
+              <li class="relative mt-20">
+
+                    <a class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="">
+                        <img class="inline-block bottom-0 h-10 w-10 rounded-full border border-slate-200 bg-slate-700" src="{{asset('assets/img/profile.png')}}" alt="avatar">
+                      <span class="sidebar-small-text">Asif</span>
+
+                    </a>
+
+
+              </li>
+
 
             {{-- <li class="relative">
               <a class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="landing.html">
@@ -134,99 +291,7 @@
               </a>
             </li>
 
-            <!-- dropdown -->
-            <li class="relative">
-              <a :class="{ 'text-cyan-500 bg-slate-700': selected == 6 }" @click="selected !== 6 ? selected = 6 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                <i class="sidebar-small-icon bx bx-layout mr-1"></i>
-                <span class="sidebar-small-text">Components</span>
-                <!-- caret -->
-                <span class="sidebar-small-text inline-block float-right">
-                  <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 6, '-rotate-90': !(selected == 6) }"></i>
-                </span>
-              </a>
 
-              <!-- dropdown menu -->
-              <ul x-show="selected == 6" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#accordion">Accordion</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#alerts">Alerts</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#avatar">Avatar</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#badge">Badge</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#breadcrumb">Breadcrumb</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#buttons">Buttons</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#card">Card</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#carousel">Carousel</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#collapse">Collapse</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#dragdrop">Drag Drop</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#dropdowns">Dropdowns</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#layouts">Layouts</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#grid">Grid</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#list-group">List Group</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#modal">Modal</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#navbar">Navbar</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#notif">Notification</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#offcanvas">Offcanvas</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#pagination">Pagination</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#popovers">Popovers</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#pricing">Pricing</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#progress">Progress</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#scrollbar">Scrollbar</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#spinners">Spinners</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#tabs">Tabs</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#tooltips">Tooltips</a>
-                </li>
-              </ul>
-            </li>
 
             <!-- dropdown -->
             <li class="relative">
