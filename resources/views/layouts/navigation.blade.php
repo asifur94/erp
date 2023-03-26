@@ -42,18 +42,7 @@
                 <li class="relative">
                   <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="index-analytics.html">Analytics</a>
                 </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="index-sales.html">Sales</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="index-sales-team.html">Sales Team</a>
-                </li>
-                <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="index-crm.html">CRM</a>
-                </li>
-                <li class="relative">
-                  <a class="text-cyan-500 block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="index-support.html">Support</a>
-                </li>
+
               </ul>
             </li>
 
@@ -73,7 +62,7 @@
               <!-- dropdown menu -->
               <ul x-show="selected == 3" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
                 <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'product' }}">Products</a>
+                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'products' }}">Products</a>
                 </li>
                 <li class="relative">
                   <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'order' }}">Orders</a>
@@ -116,7 +105,7 @@
               <ul x-show="selected == 4" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
                 <li class="relative">
 
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'employee' }}">Employees</a>
+                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'employees' }}">Employees</a>
                 </li>
                 <li class="relative">
                   <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'attendance' }}">Attendance</a>
@@ -151,7 +140,7 @@
                 <ul x-show="selected == 5" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
                   <li class="relative">
 
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'employee' }}">Employees</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'employe' }}">Employees</a>
                   </li>
                   <li class="relative">
                     <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'attendance' }}">Attendance</a>
@@ -210,7 +199,7 @@
                 </a>
 
                 <!-- dropdown menu -->
-                <ul x-show="selected == 6" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
+                <ul x-show="selected == 7" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
                   <li class="relative">
                     <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#accordion">Payments</a>
                   </li>
@@ -240,7 +229,7 @@
               </li>
 
               <li class="relative">
-                <a class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="{{ 'calender' }}">
+                <a class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="{{ 'email' }}">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-5 h-5 bi bi-envelope" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></path>
                       </svg>

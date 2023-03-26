@@ -102,7 +102,7 @@
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded">
                               </td>
                                 <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product1.jpg">
@@ -144,7 +144,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                               <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product2.jpg">
@@ -182,7 +182,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                               <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product3.jpg"></div>
@@ -218,7 +218,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                                 <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product4.jpg"></div>
@@ -254,7 +254,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                                 <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" bis_skin_checked="1">
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product5.jpg"></div>
@@ -290,7 +290,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                               <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product6.jpg"></div>
@@ -326,7 +326,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                                 <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product7.jpg"></div>
@@ -362,7 +362,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                                 <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product1.jpg"></div>
@@ -398,7 +398,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                                 <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product2.jpg"></div>
@@ -434,7 +434,7 @@
                               <td>
                                 <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded"></td>
                               <td>
-                                <a href="#">
+                                <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
                                     <div class="self-center" >
                                       <img class="h-8 w-8" src="../src/img/products/product3.jpg"></div>

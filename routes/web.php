@@ -18,36 +18,50 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('products', function () {
+    return view('Sales.products.index');
+});
 Route::get('product', function () {
-    return view('ecommerce.products.index');
+    return view('sales.products.view');
 });
 
 Route::get('customer', function () {
-    return view('ecommerce.customers.index');
+    return view('sales.customers.index');
 });
 
 Route::get('order', function () {
-    return view('ecommerce.orders.index');
+    return view('sales.orders.index');
 });
 
 Route::get('checkout', function () {
-    return view('ecommerce.checkout.index');
+    return view('sales.checkout.index');
 });
 
 Route::get('seller', function () {
-    return view('ecommerce.sellers.index');
+    return view('sales.sellers.index');
 });
 
 Route::get('calender', function () {
     return view('calender.index');
 });
 
+
+Route::get('email', function () {
+    return view('email.index');
+});
+Route::get('messages', function () {
+    return view('email.view');
+});
+
 Route::get('not found', function () {
     return view('404');
 });
 
-Route::get('employee', function () {
+Route::get('employees', function () {
     return view('hr.employee.index');
+});
+Route::get('employee', function () {
+    return view('hr.employee.view');
 });
 
 Route::get('attendance', function () {

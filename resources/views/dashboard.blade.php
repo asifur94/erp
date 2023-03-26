@@ -138,7 +138,7 @@
             {{-- <div class="flex flex-wrap flex-row" bis_skin_checked="1"> --}}
             <!-- Sales Revenue -->
             <div class="flex-shrink max-w-full px-4 w-full lg:w-2/4 mb-6" >
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full" >
+                <div class="p-6 bg-white  rounded-lg shadow-lg h-full" >
                     <div class="flex flex-row justify-between pb-6" >
                         <div class="flex flex-col" >
                       <h3 class="text-base font-bold">Revenue</h3>
