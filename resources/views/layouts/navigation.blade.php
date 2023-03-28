@@ -27,8 +27,8 @@
                 <span class="sidebar-small-text">Dashboards</span>
                 <!-- caret -->
                 <span class="inline-block float-right sidebar-small-text">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="transform transition duration-300 mt-1.5 bi bi-chevron-down ltr:-rotate-90 rtl:rotate-90" :class="{ 'rotate-0': selected == 1, 'ltr:-rotate-90 rtl:rotate-90': !(selected == 1) }" width=".8rem" height=".8rem" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                    <svg class="transform transition duration-500 -rotate-180" :class="{ '-rotate-180': selected == 0 }" width="1rem" height="1rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z" clip-rule="evenodd"></path>
                       </svg>
                   <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 1, '-rotate-90': !(selected == 1) }"></i>
                 </span>
@@ -70,12 +70,6 @@
                 <li class="relative">
                   <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'checkout' }}">Checkout</a>
                 </li>
-                <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'invoice' }}">Invoice</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'seller' }}">Seller</a>
-                  </li>
                   <li class="relative">
                     <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'customer' }}">Customers</a>
                   </li>
@@ -190,7 +184,7 @@
                  <!-- dropdown -->
             <li class="relative">
                 <a :class="{ 'text-cyan-500 bg-slate-700': selected == 7 }" @click="selected !== 7 ? selected = 7 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/money.svg')}}" alt="">
+                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/truck.svg')}}" alt="">
                   <span class="sidebar-small-text">logistics</span>
                   <!-- caret -->
                   <span class="sidebar-small-text inline-block float-right">
@@ -200,18 +194,24 @@
 
                 <!-- dropdown menu -->
                 <ul x-show="selected == 7" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#accordion">Payments</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#alerts">Journal</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#avatar">Account</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#badge">Report</a>
-                  </li>
+                    <li class="relative">
+                        <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'products' }}">Products</a>
+                      </li>
+                      <li class="relative">
+                        <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'order' }}">Orders</a>
+                      </li>
+                      <li class="relative">
+                        <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'checkout' }}">Checkout</a>
+                      </li>
+                      <li class="relative">
+                          <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'invoice' }}">Invoice</a>
+                        </li>
+                        <li class="relative">
+                          <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'seller' }}">Seller</a>
+                        </li>
+                        <li class="relative">
+                          <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'customer' }}">Customers</a>
+                        </li>
 
                 </ul>
               </li>

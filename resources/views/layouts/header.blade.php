@@ -2,7 +2,7 @@
     <div class="py-4 md:py-2 flex flex-row flex-nowrap items-center justify-between bg-white  shadow-lg shadow-cyan-100/10  px-6" >
       <div class="flex" >
         <!-- sidenav button-->
-        <button id="navbartoggle" type="button" class="inline-flex items-center justify-center text-gray-800 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-200 focus:outline-none focus:ring-0" aria-controls="sidebar-menu" @click="open = !open" aria-expanded="true" x-bind:aria-expanded="open.toString()">
+        <button id="navbartoggle" type="button" class="inline-flex items-center justify-center text-gray-800 hover:text-gray-600  focus:outline-none focus:ring-0" aria-controls="sidebar-menu" @click="open = !open" aria-expanded="true" x-bind:aria-expanded="open.toString()">
             <span class="sr-only">Mobile menu</span>
             <svg x-description="Icon open" x-state:on="Menu open" x-state:off="Menu closed" class="h-8 w-8 block" :class="{ 'block': open, 'hidden': !(open) }" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
               <path class="hidden md:block" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>

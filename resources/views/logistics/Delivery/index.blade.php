@@ -17,12 +17,12 @@
 
 
 
-<main class="pt-20 -mt-2">
+    <main class="pt-20 -mt-2">
         <div class="mx-auto p-2" >
           <!-- row -->
           <div class="flex flex-wrap flex-row" >
             <div class="flex-shrink max-w-full px-4 w-full" >
-              <p class="text-xl font-bold mt-3 mb-5">Employee</p>
+              <p class="text-xl font-bold mt-3 mb-5">Manage Orders</p>
             </div>
             <div class="flex-shrink max-w-full px-4 w-full mb-6" >
               <div class="p-6 bg-white  rounded-lg shadow-lg h-full" >
@@ -30,7 +30,7 @@
                   <div class="flex-shrink max-w-full px-4 w-full" >
                     <div class="md:flex md:justify-between" >
                       <div >
-                        <a href="{{ 'AddEmployee' }}" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Add new <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="inline-block ml-1 bi bi-plus-lg" viewBox="0 0 16 16">
+                        <a href="#" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Add new <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="inline-block ml-1 bi bi-plus-lg" viewBox="0 0 16 16">
                           <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"></path>
                         </svg></a>
                       </div>
@@ -40,13 +40,12 @@
                           <label class="flex flex-wrap flex-row">
                             <select id="bulk_actions" name="bulk_actions" class="inline-block leading-5 relative py-2 ltr:pl-3 rtl:pr-3 pr-8 mb-3 rounded bg-gray-100 border border-gray-200 overflow-x-auto focus:outline-none focus:border-gray-300 focus:ring-0  select-caret appearance-none">
                               <option value="" data-dialog-content="">Status</option>
-                              <option value="Admin">Admin</option>
-                              <option value="Accounts">Accounts</option>
-                              <option value="Logistics">Logistics</option>
-                              <option value="HR">HR</option>
-                              <option value="Executive">Executive</option>
-                              <option value="Manager">Manager</option>
-                              <option value="Others">Others</option>
+                              <option value="complete">complete</option>
+                              <option value="processing">processing</option>
+                              <option value="shipped">shipped</option>
+                              <option value="cancelled">cancelled</option>
+                              <option value="pending">pending</option>
+                              <option value="refund">refund</option>
                             </select>
                             <input type="submit" id="bulk_apply" class="ltr:ml-2 rtl:mr-2 py-2 px-4 inline-block text-center mb-3 rounded leading-5 border hover:bg-gray-300  focus:outline-none focus:ring-0 cursor-pointer" value="Apply">
                           </label>
@@ -79,52 +78,47 @@
                                 <th data-sortable="false" style="width: 6.53174%;">
                                     <input id="check_all" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
                                 </th>
-                                <th class="hidden lg:table-cell" data-sortable="" style="width: 20%;">
-                                    <a href="#" class="dataTable-sorter">Name</a>
+                                <th class="hidden lg:table-cell" data-sortable="" style="width: 14.3514%;">
+                                    <a href="#" class="dataTable-sorter">Order ID</a>
                                 </th>
-                                <th data-sortable="" style="width: 15%;">
-                                    <a href="#" class="dataTable-sorter">Number</a>
+                                <th data-sortable="" style="width: 20.5152%;">
+                                    <a href="#" class="dataTable-sorter">Shop Name</a>
                                 </th>
-                                <th class="hidden lg:table-cell" data-sortable="" style="width: 12%;">
-                                    <a href="#" class="dataTable-sorter">Salary</a>
+                                <th class="hidden lg:table-cell" data-sortable="" style="width: 17.7553%;">
+                                    <a href="#" class="dataTable-sorter">Order date</a>
                                 </th>
-                                <th class="hidden lg:table-cell" data-sortable="" style="width: 15%;">
-                                    <a href="#" class="dataTable-sorter">Position</a>
+                                <th class="hidden lg:table-cell" data-sortable="" style="width: 17.6633%;">
+                                    <a href="#" class="dataTable-sorter">Status</a>
                                 </th>
-                                <th class="text-center" data-sortable="" style="width: 25%;">
-                                    <a href="#" class="dataTable-sorter">Address</a>
+                                <th class="text-center" data-sortable="" style="width: 10.1196%;">
+                                    <a href="#" class="dataTable-sorter">Quantity</a>
                                 </th>
-
-                                <th class="hidden lg:table-cell" data-sortable="" style="width: 15%;">
-                                    <a href="#" class="dataTable-sorter">Join date</a>
-                                </th>
-                                <th data-sortable="false" style="width: 10%;">Actions</th>
+                                <th data-sortable="false" style="width: 13.0635%;">Actions</th>
                             </tr>
                           </thead>
                           <tbody>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b ">
                                 <td>
                                     <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
                                 </td>
+                                <td class="hidden lg:table-cell">INV025</td>
                                 <td>
-                                    <a href="{{ 'employee' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" >
+                                        <img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar2.png">
+                                    </div>
+                                    <div class="leading-5 dark:text-gray-300 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
                               <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-yellow-700 bg-yellow-100 rounded-full">Processing</span>
+                              </td>
+                              <td class="text-center">165</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -140,29 +134,28 @@
                                 </a>
                               </td>
                             </tr>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b \">
                                 <td>
-                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
+                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded  ">
                                 </td>
+                                <td class="hidden lg:table-cell">INV024</td>
                                 <td>
-                                    <a href="{{ 'employee' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" >
+                                        <img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar3.png">
+                                    </div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
                               <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-yellow-700 bg-yellow-100 rounded-full">Processing</span>
+                              </td>
+                              <td class="text-center">165$</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -178,29 +171,26 @@
                                 </a>
                               </td>
                             </tr>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b ">
                                 <td>
                                     <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
                                 </td>
+                                <td class="hidden lg:table-cell">INV023</td>
                                 <td>
-                                    <a href="{{ 'employee' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar4.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
                               <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Complete</span>
+                              </td>
+                              <td class="text-center">165</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -216,29 +206,26 @@
                                 </a>
                               </td>
                             </tr>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b ">
                                 <td>
                                     <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
                                 </td>
+                                <td class="hidden lg:table-cell">INV022</td>
                                 <td>
-                                    <a href="{{ 'employee' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar5.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
-                              <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">26/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Complete</span>
+                              </td>
+                              <td class="text-center">165</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -254,29 +241,26 @@
                                 </a>
                               </td>
                             </tr>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b ">
                                 <td>
                                     <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
                                 </td>
+                                <td class="hidden lg:table-cell">INV021</td>
                                 <td>
-                                    <a href="{{ 'hr.employee.view' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar6.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
-                              <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">26/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-indigo-700 bg-indigo-100 rounded-full">Shipped</span>
+                              </td>
+                              <td class="text-center">35$</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -292,29 +276,25 @@
                                 </a>
                               </td>
                             </tr>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b ">
                                 <td>
-                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
-                                </td>
+                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded "></td>
+                                <td class="hidden lg:table-cell">INV020</td>
                                 <td>
-                                    <a href="{{ 'employee' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar8.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
-                              <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">25/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-indigo-700 bg-indigo-100 rounded-full">Shipped</span>
+                              </td>
+                              <td class="text-center">35</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -330,29 +310,26 @@
                                 </a>
                               </td>
                             </tr>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b ">
                                 <td>
                                     <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
                                 </td>
+                                <td class="hidden lg:table-cell">INV019</td>
                                 <td>
-                                    <a href="{{ 'employee' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar8.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
-                              <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">25/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-pink-700 bg-pink-100 rounded-full">Canceled</span>
+                              </td>
+                              <td class="text-center">35</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -368,29 +345,25 @@
                                 </a>
                               </td>
                             </tr>
-
-                            <tr class="pointer border-b text-center ">
+                            <tr class="border-b ">
                                 <td>
-                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
-                                </td>
-                                <td>
-                                    <a href="{{ 'employee' }}">
-                                      <div class="flex flex-wrap flex-row items-center" >
-
-                                        <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                          John doe
-                                        </div>
-                                      </div>
-                                    </a>
-                                </td>
-                                <td class="hidden lg:table-cell">64765879</td>
-
-                              <td class="hidden lg:table-cell">50,000$</td>
-                              <td class="hidden lg:table-cell">
-                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full">Admin</span>
+                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded "></td>
+                                    <td class="hidden lg:table-cell">INV006</td>
+                                    <td>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar8.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
                               </td>
-                              <td class="text-center">Kushtia</td>
-                              <td class="hidden lg:table-cell">27/05/2022</td>
+                              <td class="hidden lg:table-cell">24/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-pink-700 bg-pink-100 rounded-full">Canceled</span>
+                              </td>
+                              <td class="text-center">35</td>
                               <td class="text-center">
                                 <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -406,15 +379,80 @@
                                 </a>
                               </td>
                             </tr>
-
-
-
-
-
+                            <tr class="border-b ">
+                                <td>
+                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
+                                </td>
+                                <td class="hidden lg:table-cell">INV006</td>
+                                <td>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar8.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
+                              </td>
+                              <td class="hidden lg:table-cell">24/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-yellow-700 bg-yellow-100 rounded-full">Processing</span>
+                              </td>
+                              <td class="text-center">35</td>
+                              <td class="text-center">
+                                <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path>
+                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path>
+                                  </svg>
+                                </a>
+                                <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-green-500" title="Edit">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                                  </svg>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr class="border-b ">
+                                <td>
+                                    <input type="checkbox" class="checkedall form-checkbox w-4 h-4 text-indigo-500 border border-gray-300 rounded ">
+                                </td>
+                                <td class="hidden lg:table-cell">INV006</td>
+                                <td>
+                                <a href="#">
+                                  <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center" ><img class="h-8 w-8 rounded-full bg-gray-200 " src="../src/img/avatar/avatar8.png"></div>
+                                    <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
+                                      John doe
+                                    </div>
+                                  </div>
+                                </a>
+                              </td>
+                              <td class="hidden lg:table-cell">24/05/2022</td>
+                              <td class="hidden lg:table-cell">
+                                <span class="text-sm px-2 py-1 font-semibold leading-tight text-yellow-700 bg-yellow-100 rounded-full">Processing</span>
+                              </td>
+                              <td class="text-center">35</td>
+                              <td class="text-center">
+                                <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-red-500" title="Delete">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path>
+                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path>
+                                  </svg>
+                                </a>
+                                <a href="javascript:;" class="inline-block ltr:mr-2 rtl:ml-2 hover:text-green-500" title="Edit">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                                  </svg>
+                                </a>
+                              </td>
+                            </tr>
                         </tbody>
                         </table>
                     </div>
-                   <!--Pagination-->
+                    <!--Pagination-->
         <div class="flex mt-10 items-center justify-between">
             <p class="min-w-max text-gray-600">
                 Showing Results 10 of 128
@@ -462,16 +500,7 @@
               </div>
             </div>
           </div>
-</main>
-
-
-
-
-
-
-
-
-
+        </main>
 
 
 
