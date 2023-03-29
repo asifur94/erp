@@ -20,22 +20,45 @@ Route::get('/', function () {
 
 
 // sales
-Route::get('products', function () {
-    return view('Sales.products.index');
+Route::get('stocks', function () {
+    return view('Sales.stocks.index');
 });
-Route::get('product', function () {
-    return view('sales.products.view');
+Route::get('Stock', function () {
+    return view('sales.stocks.view');
 });
-Route::get('AddProduct', function () {
-    return view('sales.products.create');
-});
+
 
 Route::get('customer', function () {
     return view('sales.customers.index');
 });
 
+Route::get('expanse', function () {
+    return view('sales.expanse.index');
+});
+
+Route::get('AddExpanse', function () {
+    return view('sales.expanse.create');
+});
+
+Route::get('AddDeposit', function () {
+    return view('sales.deposit.create');
+});
+
+Route::get('deposit', function () {
+    return view('sales.deposit.index');
+});
+
 Route::get('order', function () {
     return view('sales.orders.index');
+});
+Route::get('AddOrder', function () {
+    return view('sales.orders.create');
+});
+Route::get('OrderView', function () {
+    return view('sales.orders.view');
+});
+Route::get('reshuffle', function () {
+    return view('sales.orders.reshuffle');
 });
 
 Route::get('checkout', function () {
@@ -55,6 +78,16 @@ Route::get('AddProduct', function () {
     return view('logistics.products.create');
 });
 
+Route::get('delivery', function () {
+    return view('logistics.delivery.index');
+});
+Route::get('SendOrder', function () {
+    return view('logistics.delivery.create');
+});
+Route::get('deliveryView', function () {
+    return view('logistics.delivery..view');
+});
+
 Route::get('customer', function () {
     return view('logistics.customers.index');
 });
@@ -62,6 +95,10 @@ Route::get('customer', function () {
 
 Route::get('checkout', function () {
     return view('logistics.checkout.index');
+});
+
+Route::get('invoice', function () {
+    return view('logistics.invoice.index');
 });
 
 Route::get('seller', function () {

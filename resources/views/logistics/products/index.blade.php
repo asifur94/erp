@@ -104,8 +104,12 @@
                                 <td>
                                 <a href="{{ 'product' }}">
                                   <div class="flex flex-wrap flex-row items-center" >
+                                    <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}"></div>
                                     <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                       Nike Women's Race Running Shoe
+                                      <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                        Women Shoes
+                                      </div>
                                     </div>
                                   </div>
                                 </a>
@@ -140,8 +144,13 @@
                               <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -172,8 +181,13 @@
                               <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -203,8 +217,13 @@
                                 <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -234,8 +253,13 @@
                                 <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -265,8 +289,13 @@
                               <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -296,8 +325,13 @@
                                 <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -327,8 +361,13 @@
                                 <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -358,8 +397,13 @@
                                 <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>
@@ -389,8 +433,13 @@
                               <td>
                                 <a href="{{ 'product' }}">
                                     <div class="flex flex-wrap flex-row items-center" >
+                                        <div class="self-center"><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}">
+                                        </div>
                                         <div class="leading-5 flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
                                           Nike Women's Race Running Shoe
+                                          <div class="pt-1 text-sm italic text-gray-500 w-full">
+                                            Women Shoes
+                                          </div>
                                         </div>
                                       </div>
                                 </a>

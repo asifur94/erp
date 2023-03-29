@@ -187,9 +187,10 @@
                         <td class="p-4 font-normal">
                           <a href="#">
                             <div class="flex flex-wrap flex-row items-center" >
-                              <div class="self-center" ><img class="h-8 w-8" src="../src/img/products/product1.jpg"></div>
+                              <div class="self-center" ><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}"></div>
                               <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                Nike Unisex-Child Free Rn (Big Kid)
+                               <p>Nike Unisex-Child Free Rn (Big Kid)</p>
+                               <p>SKU:3652837498274</p>
                               </div>
                             </div>
                           </a>
@@ -200,9 +201,10 @@
                         <td class="p-4 font-normal">
                           <a href="#">
                             <div class="flex flex-wrap flex-row items-center" >
-                              <div class="self-center" ><img class="h-8 w-8" src="../src/img/products/product2.jpg"></div>
+                              <div class="self-center" ><img class="h-8 w-8" src="{{asset('assets/img/blue.jpeg')}}"></div>
                               <div class="leading-5  flex-1 ltr:ml-2 rtl:mr-2 mb-1" >
-                                Nike in-Season TR 9 Womens Running Shoe
+                                <p>Nike Unisex-Child Free Rn (Big Kid)</p>
+                               <p>SKU:3652837498274</p>
                               </div>
                             </div>
                           </a>
