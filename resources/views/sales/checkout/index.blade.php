@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <div x-data="{ open: false }" class="overflow-hidden bg-gray-100  " >
+    <div x-data="{ open: true }" class="overflow-hidden bg-gray-100  " >
 
         @include('layouts.navigation')
 

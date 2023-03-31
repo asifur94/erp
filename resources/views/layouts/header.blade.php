@@ -34,6 +34,11 @@
         <span class="text-2xl font-bold">ERP</span>
       </a>
 
+      <!-- Time-->
+      <div id="clock" class=" text-center text-lg font-bold"></div>
+      <div id="datetime" class="text-center text-4xl font-bold mb-4"></div>
+
+      <!-- header right-->
       <div x-data="{ show: true }" >
         <!-- top menu -->
         <button id="navmenu" type="button" class="inline-flex md:hidden items-center justify-center text-slate-800 hover:text-slate-600  focus:outline-none focus:ring-0" aria-controls="top-menu" @click="show = !show" aria-expanded="true" x-bind:aria-expanded="show.toString()">
@@ -385,3 +390,30 @@
       </div>
     </div>
   </nav>
+
+
+  <script type="text/javascript">
+//     const clock = document.getElementById('clock');
+
+//     function updateTime() {
+//   const now = new Date();
+//      const timeString = now.toLocaleTimeString();
+//          const dateString = now.toLocaleDateString();
+//              clock.textContent = `${timeString} & ${dateString}`;
+//     }
+
+//     updateTime();
+//     setInterval(updateTime, 1000);
+
+function updateTime() {
+    const now = new Date();
+    const date = now.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
+    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    const clock = document.getElementById('clock');
+    clock.textContent = `${date} ${time}`;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+
+  </script>

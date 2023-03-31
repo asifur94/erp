@@ -1,11 +1,11 @@
 
 
-    <div class="hidden md:block left-0 top-0 bottom-0 w-0 md:w-20" >
+    <div class="hidden sm:block md:block left-0 top-0 bottom-0 w-0 md:w-20" >
         <div class="w-full h-full  " ></div>
     </div>
 
 
-    <nav id="sidebar-menu" x-description="Mobile menu" x-bind:aria-expanded="open" :class="{ 'w-64 ml-0 md:w-20 sidebar-small': open, 'w-64 -ml-64 md:ml-0': !(open) }" class="fixed transition-all duration-500 ease-in-out h-screen bg-white  text-slate-500 z-40 w-64 ml-0 md:w-20 sidebar-small" aria-expanded="true">
+    <nav id="sidebar-menu" x-description="Mobile menu" x-bind:aria-expanded="open" :class="{ 'w-64 ml-0 md:w-20 sidebar-small': open, 'w-64 -ml-64 md:ml-0': !(open) }" class="fixed transition-all duration-500 ease-in-out h-screen bg-white  text-slate-500 z-40 w-64 ml-0 md:w-20  sidebar-small" aria-expanded="true">
         <div class="sidebar-small-overflow h-full overflow-y-auto scrollbars show" >
           <div class="w-full flex flex-row justify-center py-5" >
             <h2 class="flex flex-row items-center text-xl text-slate-100 font-semibold">
@@ -94,7 +94,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-briefcase" viewBox="0 0 16 16">
                     <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"></path>
                   </svg>
-                <span class="sidebar-small-text">HR</span>
+                <span class="sidebar-small-text">HR Admin</span>
                 <!-- caret -->
                 <span class="sidebar-small-text inline-block float-right">
                   <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 4, '-rotate-90': !(selected == 4) }"></i>
@@ -111,7 +111,7 @@
                   <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'attendance' }}">Attendance</a>
                 </li>
                 <li class="relative">
-                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'leave' }}">Leave</a>
+                  <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'punch' }}">Punch</a>
                 </li>
 
 
@@ -121,10 +121,10 @@
 
 
               <!-- dropdown -->
-              <li class="relative">
+            <li class="relative">
                 <a :class="{ 'text-cyan-500 bg-slate-700': selected == 5 }" @click="selected !== 5 ? selected = 5 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/account-service.svg')}}" alt="">
-                  <span class="sidebar-small-text">Administrative</span>
+                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/money.svg')}}" alt="">
+                  <span class="sidebar-small-text">Accounts</span>
                   <!-- caret -->
                   <span class="sidebar-small-text inline-block float-right">
                     <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 5, '-rotate-90': !(selected == 5) }"></i>
@@ -133,26 +133,28 @@
 
                 <!-- dropdown menu -->
                 <ul x-show="selected == 5" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
-                  <li class="relative">
 
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'employe' }}">Employees</a>
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'payments' }}">Payments</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'attendance' }}">Attendance</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'account' }}">Account</a>
                   </li>
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'leave' }}">Leave</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#avatar">Journal</a>
                   </li>
-
-
+                  <li class="relative">
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'cost' }}">Cost</a>
+                  </li>
 
                 </ul>
               </li>
-              <!-- dropdown -->
+
+                 <!-- dropdown -->
             <li class="relative">
                 <a :class="{ 'text-cyan-500 bg-slate-700': selected == 6 }" @click="selected !== 6 ? selected = 6 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/money.svg')}}" alt="">
-                  <span class="sidebar-small-text">Accounts</span>
+                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/truck.svg')}}" alt="">
+                  <span class="sidebar-small-text">logistics</span>
                   <!-- caret -->
                   <span class="sidebar-small-text inline-block float-right">
                     <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 6, '-rotate-90': !(selected == 6) }"></i>
@@ -161,38 +163,6 @@
 
                 <!-- dropdown menu -->
                 <ul x-show="selected == 6" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
-                    <li class="relative">
-                        <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'seller' }}">Seller</a>
-                      </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#accordion">Payments</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#alerts">Journal</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#avatar">Account</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#badge">Report</a>
-                  </li>
-
-                </ul>
-              </li>
-
-                 <!-- dropdown -->
-            <li class="relative">
-                <a :class="{ 'text-cyan-500 bg-slate-700': selected == 7 }" @click="selected !== 7 ? selected = 7 : selected = null" class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="javascript:;">
-                    <img class="inline-block h-5 w-5 ltr:mr-2 rtl:ml-2 bi bi-shop"  src="{{asset('assets/img/truck.svg')}}" alt="">
-                  <span class="sidebar-small-text">logistics</span>
-                  <!-- caret -->
-                  <span class="sidebar-small-text inline-block float-right">
-                    <i class="transform transition duration-300 bx bx-chevron-down -rotate-90" :class="{ 'rotate-0': selected == 7, '-rotate-90': !(selected == 7) }"></i>
-                  </span>
-                </a>
-
-                <!-- dropdown menu -->
-                <ul x-show="selected == 7" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
                     <li class="relative">
                         <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'products' }}">Products</a>
                       </li>
@@ -354,7 +324,9 @@
               </a>
             </li> --}}
           </ul>
+
         </div>
+
       </nav>
 
 

@@ -105,6 +105,31 @@ Route::get('seller', function () {
     return view('logistics.sellers.index');
 });
 
+//accounts
+Route::get('payments', function () {
+    return view('accounts.payments.index');
+});
+
+Route::get('payment', function () {
+    return view('accounts.payments.view');
+});
+Route::get('account', function () {
+    return view('accounts.account.index');
+});
+Route::get('journal', function () {
+    return view('accounts.account.view');
+});
+
+Route::get('cost', function () {
+    return view('accounts.cost.index');
+});
+
+Route::get('AddCost', function () {
+    return view('accounts.cost.create');
+});
+
+
+
 
 // calender
 Route::get('calender', function () {
@@ -115,8 +140,8 @@ Route::get('calender', function () {
 Route::get('email', function () {
     return view('email.index');
 });
-Route::get('messages', function () {
-    return view('email.view');
+Route::get('Create', function () {
+    return view('email.create');
 });
 
 
@@ -141,8 +166,11 @@ Route::get('attendance', function () {
     return view('hr.attendance.index');
 });
 
-Route::get('leave', function () {
-    return view('hr.leave.index');
+Route::get('punch', function () {
+    return view('hr.punch.index');
+});
+Route::get('AddLeave', function () {
+    return view('hr.punch.create');
 });
 
 

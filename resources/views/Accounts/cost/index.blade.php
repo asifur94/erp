@@ -22,7 +22,7 @@
           <!-- row -->
           <div class="flex flex-wrap flex-row" >
             <div class="flex-shrink max-w-full px-4 w-full" >
-              <p class="text-xl font-bold mt-3 mb-5">Expanse</p>
+              <p class="text-xl font-bold mt-3 mb-5">Cost</p>
             </div>
             <div class="flex-shrink max-w-full px-4 w-full mb-6" >
               <div class="p-6 bg-white rounded-lg shadow-lg h-full" >
@@ -30,9 +30,13 @@
                   <div class="flex-shrink max-w-full px-4 w-full" >
                     <div class="md:flex md:justify-between" >
                       <div >
-                        <a href="{{ 'AddExpanse' }}" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Add new <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="inline-block ltr:ml-1 rtl:mr-1 bi bi-plus-lg" viewBox="0 0 16 16">
+                        <a href="{{ 'AddCost' }}" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Add new <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="inline-block ltr:ml-1 rtl:mr-1 bi bi-plus-lg" viewBox="0 0 16 16">
                           <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"></path>
                         </svg></a>
+                      </div>
+
+                      <div >
+                        <a href="" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Cash <span>2000$</span> </a>
                       </div>
 
                       <div >
