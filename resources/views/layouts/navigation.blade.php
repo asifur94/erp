@@ -135,13 +135,10 @@
                 <ul x-show="selected == 5" x-transition:enter="transition-all duration-200 ease-out" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="block rounded rounded-t-none top-full z-50 pl-6 py-0.5 text-left mb-1 font-normal" style="display: none;">
 
                   <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'payments' }}">Payments</a>
+                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'payments' }}">Daily Payments</a>
                   </li>
                   <li class="relative">
                     <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'account' }}">Account</a>
-                  </li>
-                  <li class="relative">
-                    <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="components.html#avatar">Journal</a>
                   </li>
                   <li class="relative">
                     <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'cost' }}">Cost</a>
@@ -170,7 +167,7 @@
                         <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'delivery' }}">Delivery</a>
                       </li>
                       <li class="relative">
-                        <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'checkout' }}">Checkout</a>
+                        <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'checkout' }}">Corporate Checkout</a>
                       </li>
                       <li class="relative">
                           <a class="block w-full py-2 px-6 clear-both whitespace-nowrap hover:text-cyan-500" href="{{ 'invoice' }}">Invoice</a>
@@ -204,6 +201,20 @@
                   <span class="sidebar-small-text">Email</span>
                 </a>
               </li>
+
+
+
+              <li class="relative">
+                <a class="block py-2.5 px-6 rounded hover:bg-slate-700 hover:text-cyan-500" href="{{ 'Role' }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-unlock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path></svg>
+
+                  <span class="sidebar-small-text">Role & Permission</span>
+                </a>
+              </li>
+
+
+
+
 
               <li class="relative mt-20">
 

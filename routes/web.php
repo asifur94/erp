@@ -170,10 +170,23 @@ Route::get('punch', function () {
     return view('hr.punch.index');
 });
 Route::get('AddLeave', function () {
-    return view('hr.punch.create');
+    return view('hr.punch.AddLeave');
+});
+Route::get('Leave', function () {
+    return view('hr.punch.ViewLeave');
 });
 
 
+
+
+
+
+Route::get('Role', function () {
+    return view('RolePermission.index');
+});
+Route::get('AddRole', function () {
+    return view('RolePermission.create');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

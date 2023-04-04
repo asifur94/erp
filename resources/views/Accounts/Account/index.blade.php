@@ -36,7 +36,7 @@
                     </svg>
                 </div>
                 <div class="p-4 text-right" >
-                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Sell</p>
+                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Monthly Sell</p>
                     <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">$53k</h4>
                 </div>
                 <div class="border-t border-blue-gray-50 p-4" >
@@ -50,7 +50,7 @@
                     </svg>
                 </div>
                 <div class="p-4 text-right" >
-                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Deposit</p>
+                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Monthly Deposit</p>
                     <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">2,300</h4>
                 </div>
                 <div class="border-t border-blue-gray-50 p-4" >
@@ -63,7 +63,7 @@
                     </svg>
                 </div>
                 <div class="p-4 text-right" >
-                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Expanse</p>
+                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Monthly Expanse</p>
                     <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">3,462</h4>
                 </div>
                 <div class="border-t border-blue-gray-50 p-4" >
@@ -77,7 +77,7 @@
                     </svg>
                 </div>
                 <div class="p-4 text-right" >
-                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Cash</p>
+                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Monthly Cash</p>
                     <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">$103,430</h4>
                 </div>
                 <div class="border-t border-blue-gray-50 p-4" >
@@ -91,7 +91,7 @@
                     </svg>
                 </div>
                 <div class="p-4 text-right" >
-                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Due</p>
+                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Monthly Due</p>
                     <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">$103,430</h4>
                 </div>
                 <div class="border-t border-blue-gray-50 p-4" >
@@ -117,9 +117,12 @@
                   <div class="flex-shrink max-w-full px-4 w-full" >
                     <div class="md:flex md:justify-between" >
                       <div >
-                        <a href="" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Add new <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="inline-block ltr:ml-1 rtl:mr-1 bi bi-plus-lg" viewBox="0 0 16 16">
-                          <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"></path>
-                        </svg></a>
+                        <a href="" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">June
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block ltr:ml-1 rtl:mr-1 w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                              </svg>
+
+                        </a>
                       </div>
 
                       <div >

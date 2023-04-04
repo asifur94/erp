@@ -14,7 +14,18 @@ body {
 .sidebar-small {
     position: fixed;
 }
-
+/* CHECKBOX TOGGLE SWITCH */
+    /* @apply rules for documentation, these do not work as inline style */
+    .toggle-switchbox:checked {
+        @apply: right-0 border-green-400;
+        right: 0;
+        border-color: #68D391;
+        text-decoration:none;
+      }
+      .toggle-switchbox:checked + .toggle-label {
+        @apply: bg-green-400;
+        background-color: #68D391;
+      }
 
 /*Custom Table Sorter css*/
 

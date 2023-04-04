@@ -22,7 +22,7 @@
           <!-- row -->
           <div class="flex flex-wrap flex-row" >
             <div class="flex-shrink max-w-full px-4 w-full" >
-              <p class="text-xl font-bold mt-3 mb-5">Manage Orders</p>
+              <p class="text-xl font-bold mt-3 mb-5">Manage Delivery</p>
             </div>
             <div class="flex-shrink max-w-full px-4 w-full mb-6" >
               <div class="p-6 bg-white  rounded-lg shadow-lg h-full" >

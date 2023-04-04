@@ -502,7 +502,7 @@
 
 
 
-
+    @include('layouts.footer')
 
         </div>
         <div @click="open = false" >
